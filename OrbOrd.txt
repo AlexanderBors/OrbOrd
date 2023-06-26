@@ -1,0 +1,3374 @@
+#2.1
+PrimesExtended:=
+	[
+		2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149,151,157,163,167,173,
+		179,181,191,193,197,199,211,223,227,229,233,239,241,251,257,263,269,271,277,281,283,293,307,311,313,317,331,337,347,349,353,359,
+		367,373,379,383,389,397,401,409,419,421,431,433,439,443,449,457,461,463,467,479,487,491,499,503,509,521,523,541,547,557,563,569,
+		571,577,587,593,599,601,607,613,617,619,631,641,643,647,653,659,661,673,677,683,691,701,709,719,727,733,739,743,751,757,761,769,
+		773,787,797,809,811,821,823,827,829,839,853,857,859,863,877,881,883,887,907,911,919,929,937,941,947,953,967,971,977,983,991,997,
+		1009,1013,1019,1021,1031,1033,1039,1049,1051,1061,1063,1069,1087,1091,1093,1097,1103,1109,1117,1123,1129,1151,1153,1163,1171,
+		1181,1187,1193,1201,1213,1217,1223,1229,1231,1237,1249,1259,1277,1279,1283,1289,1291,1297,1301,1303,1307,1319,1321,1327,1361,
+		1367,1373,1381,1399,1409,1423,1427,1429,1433,1439,1447,1451,1453,1459,1471,1481,1483,1487,1489,1493,1499,1511,1523,1531,1543,
+		1549,1553,1559,1567,1571,1579,1583,1597,1601,1607,1609,1613,1619,1621,1627,1637,1657,1663,1667,1669,1693,1697,1699,1709,1721,
+		1723,1733,1741,1747,1753,1759,1777,1783,1787,1789,1801,1811,1823,1831,1847,1861,1867,1871,1873,1877,1879,1889,1901,1907,1913,
+		1931,1933,1949,1951,1973,1979,1987,1993,1997,1999,2003,2011,2017,2027,2029,2039,2053,2063,2069,2081,2083,2087,2089,2099,2111,
+		2113,2129,2131,2137,2141,2143,2153,2161,2179,2203,2207,2213,2221,2237,2239,2243,2251,2267,2269,2273,2281,2287,2293,2297,2309,
+		2311,2333,2339,2341,2347,2351,2357,2371,2377,2381,2383,2389,2393,2399,2411,2417,2423,2437,2441,2447,2459,2467,2473,2477,2503,
+		2521,2531,2539,2543,2549,2551,2557,2579,2591,2593,2609,2617,2621,2633,2647,2657,2659,2663,2671,2677,2683,2687,2689,2693,2699,
+		2707,2711,2713,2719,2729,2731,2741,2749,2753,2767,2777,2789,2791,2797,2801,2803,2819,2833,2837,2843,2851,2857,2861,2879,2887,
+		2897,2903,2909,2917,2927,2939,2953,2957,2963,2969,2971,2999,3001,3011,3019,3023,3037,3041,3049,3061,3067,3079,3083,3089,3109,
+		3119,3121,3137,3163,3167,3169,3181,3187,3191,3203,3209,3217,3221,3229,3251,3253,3257,3259,3271,3299,3301,3307,3313,3319,3323,
+		3329,3331,3343,3347,3359,3361,3371,3373,3389,3391,3407,3413,3433,3449,3457,3461,3463,3467,3469,3491,3499,3511,3517,3527,3529,
+		3533,3539,3541,3547,3557,3559,3571,3581,3583,3593,3607,3613,3617,3623,3631,3637,3643,3659,3671,3673,3677,3691,3697,3701,3709,
+		3719,3727,3733,3739,3761,3767,3769,3779,3793,3797,3803,3821,3823,3833,3847,3851,3853,3863,3877,3881,3889,3907,3911,3917,3919,
+		3923,3929,3931,3943,3947,3967,3989,4001,4003,4007,4013,4019,4021,4027,4049,4051,4057,4073,4079,4091,4093,4099,4111,4127,4129,
+		4133,4139,4153,4157,4159,4177,4201,4211,4217,4219,4229,4231,4241,4243,4253,4259,4261,4271,4273,4283,4289,4297,4327,4337,4339,
+		4349,4357,4363,4373,4391,4397,4409,4421,4423,4441,4447,4451,4457,4463,4481,4483,4493,4507,4513,4517,4519,4523,4547,4549,4561,
+		4567,4583,4591,4597,4603,4621,4637,4639,4643,4649,4651,4657,4663,4673,4679,4691,4703,4721,4723,4729,4733,4751,4759,4783,4787,
+		4789,4793,4799,4801,4813,4817,4831,4861,4871,4877,4889,4903,4909,4919,4931,4933,4937,4943,4951,4957,4967,4969,4973,4987,4993,
+		4999,5003,5009,5011,5021,5023,5039,5051,5059,5077,5081,5087,5099,5101,5107,5113,5119,5147,5153,5167,5171,5179,5189,5197,5209,
+		5227,5231,5233,5237,5261,5273,5279,5281,5297,5303,5309,5323,5333,5347,5351,5381,5387,5393,5399,5407,5413,5417,5419,5431,5437,
+		5441,5443,5449,5471,5477,5479,5483,5501,5503,5507,5519,5521,5527,5531,5557,5563,5569,5573,5581,5591,5623,5639,5641,5647,5651,
+		5653,5657,5659,5669,5683,5689,5693,5701,5711,5717,5737,5741,5743,5749,5779,5783,5791,5801,5807,5813,5821,5827,5839,5843,5849,
+		5851,5857,5861,5867,5869,5879,5881,5897,5903,5923,5927,5939,5953,5981,5987,6007,6011,6029,6037,6043,6047,6053,6067,6073,6079,
+		6089,6091,6101,6113,6121,6131,6133,6143,6151,6163,6173,6197,6199,6203,6211,6217,6221,6229,6247,6257,6263,6269,6271,6277,6287,
+		6299,6301,6311,6317,6323,6329,6337,6343,6353,6359,6361,6367,6373,6379,6389,6397,6421,6427,6449,6451,6469,6473,6481,6491,6521,
+		6529,6547,6551,6553,6563,6569,6571,6577,6581,6599,6607,6619,6637,6653,6659,6661,6673,6679,6689,6691,6701,6703,6709,6719,6733,
+		6737,6761,6763,6779,6781,6791,6793,6803,6823,6827,6829,6833,6841,6857,6863,6869,6871,6883,6899,6907,6911,6917,6947,6949,6959,
+		6961,6967,6971,6977,6983,6991,6997,7001,7013,7019,7027,7039,7043,7057,7069,7079,7103,7109,7121,7127,7129,7151,7159,7177,7187,
+		7193,7207,7211,7213,7219,7229,7237,7243,7247,7253,7283,7297,7307,7309,7321,7331,7333,7349,7351,7369,7393,7411,7417,7433,7451,
+		7457,7459,7477,7481,7487,7489,7499,7507,7517,7523,7529,7537,7541,7547,7549,7559,7561,7573,7577,7583,7589,7591,7603,7607,7621,
+		7639,7643,7649,7669,7673,7681,7687,7691,7699,7703,7717,7723,7727,7741,7753,7757,7759,7789,7793,7817,7823,7829,7841,7853,7867,
+		7873,7877,7879,7883,7901,7907,7919,7927,7933,7937,7949,7951,7963,7993,8009,8011,8017,8039,8053,8059,8069,8081,8087,8089,8093,
+		8101,8111,8117,8123,8147,8161,8167,8171,8179,8191,8209,8219,8221,8231,8233,8237,8243,8263,8269,8273,8287,8291,8293,8297,8311,
+		8317,8329,8353,8363,8369,8377,8387,8389,8419,8423,8429,8431,8443,8447,8461,8467,8501,8513,8521,8527,8537,8539,8543,8563,8573,
+		8581,8597,8599,8609,8623,8627,8629,8641,8647,8663,8669,8677,8681,8689,8693,8699,8707,8713,8719,8731,8737,8741,8747,8753,8761,
+		8779,8783,8803,8807,8819,8821,8831,8837,8839,8849,8861,8863,8867,8887,8893,8923,8929,8933,8941,8951,8963,8969,8971,8999,9001,
+		9007,9011,9013,9029,9041,9043,9049,9059,9067,9091,9103,9109,9127,9133,9137,9151,9157,9161,9173,9181,9187,9199,9203,9209,9221,
+		9227,9239,9241,9257,9277,9281,9283,9293,9311,9319,9323,9337,9341,9343,9349,9371,9377,9391,9397,9403,9413,9419,9421,9431,9433,
+		9437,9439,9461,9463,9467,9473,9479,9491,9497,9511,9521,9533,9539,9547,9551,9587,9601,9613,9619,9623,9629,9631,9643,9649,9661,
+		9677,9679,9689,9697,9719,9721,9733,9739,9743,9749,9767,9769,9781,9787,9791,9803,9811,9817,9829,9833,9839,9851,9857,9859,9871,
+		9883,9887,9901,9907,9923,9929,9931,9941,9949,9967,9973,10007,10009,10037,10039,10061,10067,10069,10079,10091,10093,10099,
+		10103,10111,10133,10139,10141,10151,10159,10163,10169,10177,10181,10193,10211,10223,10243,10247,10253,10259,10267,10271,
+		10273,10289,10301,10303,10313,10321,10331,10333,10337,10343,10357,10369,10391,10399,10427,10429,10433,10453,10457,10459,
+		10463,10477,10487,10499,10501,10513,10529,10531,10559,10567,10589,10597,10601,10607,10613,10627,10631,10639,10651,10657,
+		10663,10667,10687,10691,10709,10711,10723,10729,10733,10739,10753,10771,10781,10789,10799,10831,10837,10847,10853,10859,
+		10861,10867,10883,10889,10891,10903,10909,10937,10939,10949,10957,10973,10979,10987,10993,11003,11027,11047,11057,11059,
+		11069,11071,11083,11087,11093,11113,11117,11119,11131,11149,11159,11161,11171,11173,11177,11197,11213,11239,11243,11251,
+		11257,11261,11273,11279,11287,11299,11311,11317,11321,11329,11351,11353,11369,11383,11393,11399,11411,11423,11437,11443,
+		11447,11467,11471,11483,11489,11491,11497,11503,11519,11527,11549,11551,11579,11587,11593,11597,11617,11621,11633,11657,
+		11677,11681,11689,11699,11701,11717,11719,11731,11743,11777,11779,11783,11789,11801,11807,11813,11821,11827,11831,11833,
+		11839,11863,11867,11887,11897,11903,11909,11923,11927,11933,11939,11941,11953,11959,11969,11971,11981,11987,12007,12011,
+		12037,12041,12043,12049,12071,12073,12097,12101,12107,12109,12113,12119,12143,12149,12157,12161,12163,12197,12203,12211,
+		12227,12239,12241,12251,12253,12263,12269,12277,12281,12289,12301,12323,12329,12343,12347,12373,12377,12379,12391,12401,
+		12409,12413,12421,12433,12437,12451,12457,12473,12479,12487,12491,12497,12503,12511,12517,12527,12539,12541,12547,12553,
+		12569,12577,12583,12589,12601,12611,12613,12619,12637,12641,12647,12653,12659,12671,12689,12697,12703,12713,12721,12739,
+		12743,12757,12763,12781,12791,12799,12809,12821,12823,12829,12841,12853,12889,12893,12899,12907,12911,12917,12919,12923,
+		12941,12953,12959,12967,12973,12979,12983,13001,13003,13007,13009,13033,13037,13043,13049,13063,13093,13099,13103,13109,
+		13121,13127,13147,13151,13159,13163,13171,13177,13183,13187,13217,13219,13229,13241,13249,13259,13267,13291,13297,13309,
+		13313,13327,13331,13337,13339,13367,13381,13397,13399,13411,13417,13421,13441,13451,13457,13463,13469,13477,13487,13499,
+		13513,13523,13537,13553,13567,13577,13591,13597,13613,13619,13627,13633,13649,13669,13679,13681,13687,13691,13693,13697,
+		13709,13711,13721,13723,13729,13751,13757,13759,13763,13781,13789,13799,13807,13829,13831,13841,13859,13873,13877,13879,
+		13883,13901,13903,13907,13913,13921,13931,13933,13963,13967,13997,13999,14009,14011,14029,14033,14051,14057,14071,14081,
+		14083,14087,14107,14143,14149,14153,14159,14173,14177,14197,14207,14221,14243,14249,14251,14281,14293,14303,14321,14323,
+		14327,14341,14347,14369,14387,14389,14401,14407,14411,14419,14423,14431,14437,14447,14449,14461,14479,14489,14503,14519,
+		14533,14537,14543,14549,14551,14557,14561,14563,14591,14593,14621,14627,14629,14633,14639,14653,14657,14669,14683,14699,
+		14713,14717,14723,14731,14737,14741,14747,14753,14759,14767,14771,14779,14783,14797,14813,14821,14827,14831,14843,14851,
+		14867,14869,14879,14887,14891,14897,14923,14929,14939,14947,14951,14957,14969,14983,15013,15017,15031,15053,15061,15073,
+		15077,15083,15091,15101,15107,15121,15131,15137,15139,15149,15161,15173,15187,15193,15199,15217,15227,15233,15241,15259,
+		15263,15269,15271,15277,15287,15289,15299,15307,15313,15319,15329,15331,15349,15359,15361,15373,15377,15383,15391,15401,
+		15413,15427,15439,15443,15451,15461,15467,15473,15493,15497,15511,15527,15541,15551,15559,15569,15581,15583,15601,15607,
+		15619,15629,15641,15643,15647,15649,15661,15667,15671,15679,15683,15727,15731,15733,15737,15739,15749,15761,15767,15773,
+		15787,15791,15797,15803,15809,15817,15823,15859,15877,15881,15887,15889,15901,15907,15913,15919,15923,15937,15959,15971,
+		15973,15991,16001,16007,16033,16057,16061,16063,16067,16069,16073,16087,16091,16097,16103,16111,16127,16139,16141,16183,
+		16187,16189,16193,16217,16223,16229,16231,16249,16253,16267,16273,16301,16319,16333,16339,16349,16361,16363,16369,16381,
+		16411,16417,16421,16427,16433,16447,16451,16453,16477,16481,16487,16493,16519,16529,16547,16553,16561,16567,16573,16603,
+		16607,16619,16631,16633,16649,16651,16657,16661,16673,16691,16693,16699,16703,16729,16741,16747,16759,16763,16787,16811,
+		16823,16829,16831,16843,16871,16879,16883,16889,16901,16903,16921,16927,16931,16937,16943,16963,16979,16981,16987,16993,
+		17011,17021,17027,17029,17033,17041,17047,17053,17077,17093,17099,17107,17117,17123,17137,17159,17167,17183,17189,17191,
+		17203,17207,17209,17231,17239,17257,17291,17293,17299,17317,17321,17327,17333,17341,17351,17359,17377,17383,17387,17389,
+		17393,17401,17417,17419,17431,17443,17449,17467,17471,17477,17483,17489,17491,17497,17509,17519,17539,17551,17569,17573,
+		17579,17581,17597,17599,17609,17623,17627,17657,17659,17669,17681,17683,17707,17713,17729,17737,17747,17749,17761,17783,
+		17789,17791,17807,17827,17837,17839,17851,17863,17881,17891,17903,17909,17911,17921,17923,17929,17939,17957,17959,17971,
+		17977,17981,17987,17989,18013,18041,18043,18047,18049,18059,18061,18077,18089,18097,18119,18121,18127,18131,18133,18143,
+		18149,18169,18181,18191,18199,18211,18217,18223,18229,18233,18251,18253,18257,18269,18287,18289,18301,18307,18311,18313,
+		18329,18341,18353,18367,18371,18379,18397,18401,18413,18427,18433,18439,18443,18451,18457,18461,18481,18493,18503,18517,
+		18521,18523,18539,18541,18553,18583,18587,18593,18617,18637,18661,18671,18679,18691,18701,18713,18719,18731,18743,18749,
+		18757,18773,18787,18793,18797,18803,18839,18859,18869,18899,18911,18913,18917,18919,18947,18959,18973,18979,19001,19009,
+		19013,19031,19037,19051,19069,19073,19079,19081,19087,19121,19139,19141,19157,19163,19181,19183,19207,19211,19213,19219,
+		19231,19237,19249,19259,19267,19273,19289,19301,19309,19319,19333,19373,19379,19381,19387,19391,19403,19417,19421,19423,
+		19427,19429,19433,19441,19447,19457,19463,19469,19471,19477,19483,19489,19501,19507,19531,19541,19543,19553,19559,19571,
+		19577,19583,19597,19603,19609,19661,19681,19687,19697,19699,19709,19717,19727,19739,19751,19753,19759,19763,19777,19793,
+		19801,19813,19819,19841,19843,19853,19861,19867,19889,19891,19913,19919,19927,19937,19949,19961,19963,19973,19979,19991,
+		19993,19997,20011,20021,20023,20029,20047,20051,20063,20071,20089,20101,20107,20113,20117,20123,20129,20143,20147,20149,
+		20161,20173,20177,20183,20201,20219,20231,20233,20249,20261,20269,20287,20297,20323,20327,20333,20341,20347,20353,20357,
+		20359,20369,20389,20393,20399,20407,20411,20431,20441,20443,20477,20479,20483,20507,20509,20521,20533,20543,20549,20551,
+		20563,20593,20599,20611,20627,20639,20641,20663,20681,20693,20707,20717,20719,20731,20743,20747,20749,20753,20759,20771,
+		20773,20789,20807,20809,20849,20857,20873,20879,20887,20897,20899,20903,20921,20929,20939,20947,20959,20963,20981,20983,
+		21001,21011,21013,21017,21019,21023,21031,21059,21061,21067,21089,21101,21107,21121,21139,21143,21149,21157,21163,21169,
+		21179,21187,21191,21193,21211,21221,21227,21247,21269,21277,21283,21313,21317,21319,21323,21341,21347,21377,21379,21383,
+		21391,21397,21401,21407,21419,21433,21467,21481,21487,21491,21493,21499,21503,21517,21521,21523,21529,21557,21559,21563,
+		21569,21577,21587,21589,21599,21601,21611,21613,21617,21647,21649,21661,21673,21683,21701,21713,21727,21737,21739,21751,
+		21757,21767,21773,21787,21799,21803,21817,21821,21839,21841,21851,21859,21863,21871,21881,21893,21911,21929,21937,21943,
+		21961,21977,21991,21997,22003,22013,22027,22031,22037,22039,22051,22063,22067,22073,22079,22091,22093,22109,22111,22123,
+		22129,22133,22147,22153,22157,22159,22171,22189,22193,22229,22247,22259,22271,22273,22277,22279,22283,22291,22303,22307,
+		22343,22349,22367,22369,22381,22391,22397,22409,22433,22441,22447,22453,22469,22481,22483,22501,22511,22531,22541,22543,
+		22549,22567,22571,22573,22613,22619,22621,22637,22639,22643,22651,22669,22679,22691,22697,22699,22709,22717,22721,22727,
+		22739,22741,22751,22769,22777,22783,22787,22807,22811,22817,22853,22859,22861,22871,22877,22901,22907,22921,22937,22943,
+		22961,22963,22973,22993,23003,23011,23017,23021,23027,23029,23039,23041,23053,23057,23059,23063,23071,23081,23087,23099,
+		23117,23131,23143,23159,23167,23173,23189,23197,23201,23203,23209,23227,23251,23269,23279,23291,23293,23297,23311,23321,
+		23327,23333,23339,23357,23369,23371,23399,23417,23431,23447,23459,23473,23497,23509,23531,23537,23539,23549,23557,23561,
+		23563,23567,23581,23593,23599,23603,23609,23623,23627,23629,23633,23663,23669,23671,23677,23687,23689,23719,23741,23743,
+		23747,23753,23761,23767,23773,23789,23801,23813,23819,23827,23831,23833,23857,23869,23873,23879,23887,23893,23899,23909,
+		23911,23917,23929,23957,23971,23977,23981,23993,24001,24007,24019,24023,24029,24043,24049,24061,24071,24077,24083,24091,
+		24097,24103,24107,24109,24113,24121,24133,24137,24151,24169,24179,24181,24197,24203,24223,24229,24239,24247,24251,24281,
+		24317,24329,24337,24359,24371,24373,24379,24391,24407,24413,24419,24421,24439,24443,24469,24473,24481,24499,24509,24517,
+		24527,24533,24547,24551,24571,24593,24611,24623,24631,24659,24671,24677,24683,24691,24697,24709,24733,24749,24763,24767,
+		24781,24793,24799,24809,24821,24841,24847,24851,24859,24877,24889,24907,24917,24919,24923,24943,24953,24967,24971,24977,
+		24979,24989,25013
+	];
+
+#2.2
+NextPartitionNumberMatrix:=function(mat)
+	local n,k,i,nextRow,j,p,pi,f;
+	n:=Length(mat);
+	k:=Length(mat[1]);
+	if PrimesExtended[k+1]<=n+1 then
+		for i in [1..n] do
+			Add(mat[i],0);
+		od;
+		nextRow:=[];
+		for j in [1..k+1] do
+			p:=PrimesExtended[j];
+			pi:=0;
+			for f in [1..LogInt(n+1,p)] do
+				if p^f=n+1 then
+					pi:=pi+1;
+				else
+					pi:=pi+Sum([j+1..k],l->mat[n+1-p^f][l]);
+				fi;
+			od;
+			Add(nextRow,pi);
+		od;
+		Add(mat,nextRow);
+	else
+		nextRow:=[];
+		for j in [1..k] do
+			p:=PrimesExtended[j];
+			pi:=0;
+			for f in [1..LogInt(n+1,p)] do
+				if p^f=n+1 then
+					pi:=pi+1;
+				else
+					pi:=pi+Sum([j+1..k],l->mat[n+1-p^f][l]);
+				fi;
+			od;
+			Add(nextRow,pi);
+		od;
+		Add(mat,nextRow);
+	fi;
+	return mat;
+end;
+
+#2.3
+PartitionNumberMatrix:=function(n)
+	local mat,i;
+	mat:=[[0]];
+	for i in [2..n] do
+		mat:=NextPartitionNumberMatrix(mat);
+	od;
+	return mat;
+end;
+
+#2.4
+NrPartitionsIntoPairwiseCoprimeNontrivialPrimePowers:=function(n)
+	return Sum(PartitionNumberMatrix(n)[n]);
+end;
+
+#2.5
+NrElementOrdersSym:=function(n)
+	return 1+Sum(List([1..n],i->NrPartitionsIntoPairwiseCoprimeNontrivialPrimePowers(i)));
+end;
+
+#2.6
+ConstantsInOmicronSymBoundList:=function(n)
+	local partMat,currentOmicron,omicronSymList,i,cList;
+	partMat:=PartitionNumberMatrix(n);
+	currentOmicron:=1;
+	omicronSymList:=[];
+	for i in [1..n] do
+		currentOmicron:=currentOmicron+Sum(partMat[i]);
+		Add(omicronSymList,currentOmicron);
+	od;
+	cList:=[];
+	for i in [1..n] do
+		Add(cList,Log(Float(omicronSymList[i]))/Sqrt(Float(i)));
+	od;
+	return cList;
+end;
+
+#3.1.1
+nrDivisors:=function(n)
+	local factors,multiplicities,p,counter,test;
+	factors:=FactorsInt(n);
+	multiplicities:=[];
+	while not IsEmpty(factors) do
+		p:=factors[1];
+		counter:=0;
+		test:=true;
+		while test do
+			if (not IsEmpty(factors) and factors[1]=p) then
+				counter:=counter+1;
+				Remove(factors,1);
+			else
+				test:=false;
+				break;
+			fi;
+		od;
+		Add(multiplicities,counter);
+	od;
+	return Product(List(multiplicities,i->i+1));
+end;
+
+#3.1.2
+lcm:=function(list)
+	if IsEmpty(list) then
+		return 1;
+	else
+		return Lcm(list);
+	fi;
+end;
+
+#3.2.1
+OrderA:=function(d,q)
+	return 1/Gcd(d+1,q-1)*q^(d*(d+1)/2)*Product(List([1..d],i->(q^(i+1)-1)));
+end;
+
+#3.2.2
+LogLogOrderA:=function(d,q)
+	return Log(-Log(Float(Gcd(d+1,q-1)))+Float(d*(d+1)/2)*Log(Float(q))+Sum(List([1..d],i->Log(Float(q^(i+1)-1)))));
+end;
+
+#3.2.3
+OrderOutA:=function(d,q)
+	local p;
+	p:=FactorsInt(q)[1];
+	if d=1 then
+		return Gcd(d+1,q-1)*LogInt(q,p);
+	else
+		return Gcd(d+1,q-1)*LogInt(q,p)*2;
+	fi;
+end;
+
+#3.2.4
+NrConjugacyClassesA:=function(d,q)
+	return NrConjugacyClassesPSL(d+1,q);
+end;
+
+#3.2.5
+NrAutOrbitsBoundA:=function(d,q,l)
+	if not l=2 then
+		return "This quality level is not available. Please set the quality level to 2.";
+	fi;
+	return Int(Ceil(Float(NrConjugacyClassesA(d,q)/OrderOutA(d,q))));
+end;
+
+#3.2.6
+epsilonOmegaBoundA:=function(d,q,l)
+	if not l=2 then
+		return "This quality level is not available. Please set the quality level to 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundA(d,q,2))))/LogLogOrderA(d,q);
+end;
+
+#3.2.7
+CoxeterNoA:=function(d)
+	return d+1;
+end;
+
+#3.2.8
+SemisimpleElementOrdersA:=function(d,q)
+	local it,semisimpleOrders,part,partGreaterOne,partSet,s;
+	it:=IteratorOfPartitions(d+1);
+	semisimpleOrders:=[];
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		s:=Length(part);
+		if s=1 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-1)))/(Gcd(d+1,q-1)*(q-1))));
+			continue;
+		fi;
+		if s=2 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-1)))/Gcd((d+1)/Gcd(partSet),q-1)));
+			continue;
+		fi;
+		if s>2 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-1)))));
+			continue;
+		fi;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.2.9
+NrSemisimpleElementOrdersA:=function(d,q)
+	return Length(SemisimpleElementOrdersA(d,q));
+end;
+
+#3.2.10
+NrSemisimpleElementOrdersBoundA:=function(d,q)
+	local it,counter,part,partGreaterOne,partSet,s;
+	it:=IteratorOfPartitions(d+1);
+	counter:=0;
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		s:=Length(part);
+		if s=1 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-1)))/(Gcd(d+1,q-1)*(q-1)));
+			continue;
+		fi;
+		if s=2 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-1)))/Gcd((d+1)/Gcd(partSet),q-1));
+			continue;
+		fi;
+		if s>2 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-1))));
+			continue;
+		fi;
+	od;
+	return counter;
+end;
+
+#3.2.11
+SemisimpleElementOrdersGL:=function(n,q)
+	local it,semisimpleOrders,part,partGreaterOne,partSet;
+	it:=IteratorOfPartitions(n);
+	semisimpleOrders:=[];
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-1)))));
+	od;
+	return semisimpleOrders;
+end;
+
+#3.2.12
+NrElementOrdersSharplyDivisibleByPToEBoundA:=function(d,q,e)
+	local p;
+	p:=FactorsInt(q)[1];
+	if e=0 then
+		return NrSemisimpleElementOrdersA(d,q);
+	fi;
+	if p^(e-1)+1=d+1 then
+		return 1;
+	fi;
+	if p^(e-1)+1=d then
+		return Length(DivisorsInt((q-1)/Gcd(d+1,q-1)));
+	fi;
+	return Length(Union(List(List(SemisimpleElementOrdersGL(d-p^(e-1),q),o->Lcm(q-1,o)),x->DivisorsInt(x))));
+end;
+
+#3.2.13
+NrElementOrdersBoundA:=function(d,q,l)
+	local p;
+	if not l in [1,2,3] then
+		return "This quality level is not available. Please set the quality level to 1, 2 or 3.";
+	fi;
+	p:=FactorsInt(q)[1];
+	if l=3 then
+		return Sum(List([0..Int(1.+Floor(Log(Float(d))/Log(Float(p))))],e->NrElementOrdersSharplyDivisibleByPToEBoundA(d,q,e)));
+	fi;
+	if l=2 then
+		return Int(Floor(Float(NrSemisimpleElementOrdersA(d,q))*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(Float(p))))));
+	fi;
+	if l=1 then
+		return Int(Floor(Float(NrSemisimpleElementOrdersBoundA(d,q))*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(Float(p))))));
+	fi;
+end;
+
+#3.2.14
+epsilonQBoundA:=function(d,q,l1,l2)
+	if not (l1=2 and (l2 in [1,2,3])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [2,1], [2,2] or [2,3].";
+	fi;
+	return (Log(Log(Float(NrAutOrbitsBoundA(d,q,2)/NrElementOrdersBoundA(d,q,l2))+3.)))/LogLogOrderA(d,q);
+end;
+
+#3.2.15
+epsilonQBoundAd2:=function(d)
+	return Log(Log(Ceil(Float(2^d/OrderOutA(d,2)))/(21814655894.*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(2.))))+3.))/LogLogOrderA(d,2);
+end;
+
+#3.3.1
+Order2A:=function(d,Q)
+	local q;
+	q:=Sqrt(Q);
+	return 1/Gcd(d+1,q+1)*q^(d*(d+1)/2)*Product(List([1..d],i->(q^(i+1)-(-1)^(i+1))));
+end;
+
+#3.3.2
+LogLogOrder2A:=function(d,Q)
+	local q;
+	q:=Sqrt(Q);
+	return Log(-Log(Float(Gcd(d+1,q+1)))+Float(d*(d+1)/2)*Log(Float(q))+Sum(List([1..d],i->Log(Float(q^(i+1)-(-1)^(i+1))))));
+end;
+
+#3.3.3
+OrderOut2A:=function(d,Q)
+	local p,q;
+	p:=FactorsInt(Q)[1];
+	q:=Sqrt(Q);
+	return Gcd(d+1,q+1)*LogInt(Q,p);
+end;
+
+#3.3.4
+NrConjugacyClasses2A:=function(d,Q)
+	return NrConjugacyClassesPSU(d+1,Sqrt(Q));
+end;
+
+#3.3.5
+NrAutOrbitsBound2A:=function(d,Q,l)
+	if not l=2 then
+		return "This quality level is not available. Please set the quality level to 2.";
+	fi;
+	return Int(Ceil(Float(NrConjugacyClasses2A(d,Q)/OrderOut2A(d,Q))));
+end;
+
+#3.3.6
+epsilonOmegaBound2A:=function(d,Q,l)
+	if not l=2 then
+		return "This quality level is not available. Please set the quality level to 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBound2A(d,Q,2))))/Log(Log(Float(Order2A(d,Q))));
+end;
+
+#3.3.7
+SemisimpleElementOrders2A:=function(d,Q)
+	local q,it,semisimpleOrders,part,partGreaterOne,partSet,s;
+	q:=Sqrt(Q);
+	it:=IteratorOfPartitions(d+1);
+	semisimpleOrders:=[];
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		s:=Length(part);
+		if s=1 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-(-1)^x)))/(Gcd(d+1,q+1)*(q+1))));
+			continue;
+		fi;
+		if s=2 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-(-1)^x)))/Gcd((d+1)/Gcd(partSet),q+1)));
+			continue;
+		fi;
+		if s>2 then
+			semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-(-1)^x)))));
+			continue;
+		fi;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.3.8
+NrSemisimpleElementOrders2A:=function(d,Q)
+	return Length(SemisimpleElementOrders2A(d,Q));
+end;
+
+#3.3.9
+NrSemisimpleElementOrdersBound2A:=function(d,Q)
+	local q,it,counter,part,partGreaterOne,partSet,s;
+	q:=Sqrt(Q);
+	it:=IteratorOfPartitions(d+1);
+	counter:=0;
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		s:=Length(part);
+		if s=1 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-(-1)^x)))/(Gcd(d+1,q+1)*(q+1)));
+			continue;
+		fi;
+		if s=2 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-(-1)^x)))/Gcd((d+1)/Gcd(partSet),q+1));
+			continue;
+		fi;
+		if s>2 then
+			counter:=counter+nrDivisors(Lcm(List(partSet,x->(q^x-(-1)^x))));
+			continue;
+		fi;
+	od;
+	return counter;
+end;
+
+#3.3.10
+SemisimpleElementOrdersGU:=function(n,q)
+	local it,semisimpleOrders,part,partGreaterOne,partSet;
+	it:=IteratorOfPartitions(n);
+	semisimpleOrders:=[];
+	for part in it do
+		partGreaterOne:=part{Difference([1..Length(part)],Positions(part,1))};
+		if Length(partGreaterOne)>Length(Set(partGreaterOne)) then
+			continue;
+		fi;
+		partSet:=Set(part);
+		semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(List(partSet,x->(q^x-(-1)^x)))));
+	od;
+	return semisimpleOrders;
+end;
+
+#3.3.11
+NrElementOrdersSharplyDivisibleByPToEBound2A:=function(d,Q,e)
+	local q,p;
+	q:=Sqrt(Q);
+	p:=FactorsInt(q)[1];
+	if e=0 then
+		return NrSemisimpleElementOrders2A(d,Q);
+	fi;
+	if p^(e-1)+1=d+1 then
+		return 1;
+	fi;
+	if p^(e-1)+1=d then
+		return Length(DivisorsInt((q+1)/Gcd(d+1,q+1)));
+	fi;
+	return Length(Union(List(List(SemisimpleElementOrdersGU(d-p^(e-1),q),o->Lcm(q+1,o)),x->DivisorsInt(x))));
+end;
+
+#3.3.12
+NrElementOrdersBound2A:=function(d,Q,l)
+	local p;
+	if not l in [1,2,3] then
+		return "This quality level is not available. Please set the quality level to 1, 2 or 3.";
+	fi;
+	p:=FactorsInt(Q)[1];
+	if l=3 then
+		return Sum(List([0..Int(1.+Floor(Log(Float(d))/Log(Float(p))))],e->NrElementOrdersSharplyDivisibleByPToEBound2A(d,Q,e)));
+	fi;
+	if l=2 then
+		return Int(Floor(Float(NrSemisimpleElementOrders2A(d,Q))*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(Float(p))))));
+	fi;
+	if l=1 then
+		return Int(Floor(Float(NrSemisimpleElementOrdersBound2A(d,Q))*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(Float(p))))));
+	fi;
+end;
+
+#3.3.13
+epsilonQBound2A:=function(d,Q,l1,l2)
+	if not (l1=2 and (l2 in [1,2,3])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [2,1], [2,2] or [2,3].";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBound2A(d,Q,2)/NrElementOrdersBound2A(d,Q,l2))+3.))/LogLogOrder2A(d,Q);
+end;
+
+#3.3.14
+epsilonQBound2Ad4:=function(d)
+	return Log(Log(Ceil(Float(2^d/(Gcd(d+1,3)*OrderOut2A(d,4))))/(8950686178.*(1.+Ceil(Log(Float(CoxeterNoA(d)))/Log(2.))))+3.))/LogLogOrder2A(d,4);
+end;
+
+#3.4.1
+OrderB:=function(d,q)
+	return 1/Gcd(2,q-1)*q^(d^2)*Product(List([1..d],i->(q^(2*i)-1)));
+end;
+
+#3.4.2
+LogLogOrderB:=function(d,q)
+	return Log(-Log(Float(Gcd(2,q-1)))+Float(d^2)*Log(Float(q))+Sum(List([1..d],i->Log(Float(q^(2*i)-1)))));
+end;
+
+#3.4.3
+OrderOutB:=function(d,q)
+	local p;
+	p:=FactorsInt(q)[1];
+	if IsEvenInt(q) and d=2 then
+		return Gcd(2,q-1)*LogInt(q,p)*2;
+	else
+		return Gcd(2,q-1)*LogInt(q,p);
+	fi;
+end;
+
+#3.4.4
+NrConjugacyClassesB:=function(d,q)
+	local t,m;
+	t:=Indeterminate(Rationals);
+	if IsEvenInt(q) then
+		return CoefficientsOfUnivariatePolynomial(Product(List([1..Int(d/4)],i->(1-t^(4*i))))*Product(List([1..Int((d+2)/4)],i->Sum(List([0..Int(d/(4*i-2))],j->t^((4*i-2)*j)))))*Product(List([1..d],i->Sum(List([0..Int(d/i)],j->t^(i*j)))))*Product(List([1..d],i->Sum(List([0..Int(d/i)],j->(q*t^i)^j)))))[d+1];
+	fi;
+	m:=2*d+1;
+	return CoefficientsOfUnivariatePolynomial(3/4*Product(List(List([0..d],i->2*i+1),j->(1+t^j)^2))*Product(List([1..Int(m/4)],i->Sum(List([0..Int(m/(4*i))],j->(q*t^(4*i))^j)))))[m+1] + CoefficientsOfUnivariatePolynomial(1/2*Product(List([1..Int((m-1)/2)],i->((1-t^(8*i))^2*Sum(List([0..Int((m-1)/(8*i-4))],j->t^((8*i-4)*j)))^2*Sum([0..Int((m-1)/(2*i))],j->t^(2*i*j))^2*Sum(List([0..Int((m-1)/(2*i))],j->(q*t^(2*i))^j))))))[m];
+end;
+
+#3.4.5
+NrConjugacyClassesBoundB:=function(d,q)
+	if IsEvenInt(q) then
+		return q^d;
+	else
+		return Int(Ceil(Float((q^d)/2)));
+	fi;
+end;
+
+#3.4.6
+NrAutOrbitsBoundB:=function(d,q,l)
+	if not l in [1,2] then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	if l=2 then
+		return Int(Ceil(Float(NrConjugacyClassesB(d,q))/Float(OrderOutB(d,q))));
+	fi;
+	if l=1 then
+		return Int(Ceil(Float(NrConjugacyClassesBoundB(d,q))/Float(OrderOutB(d,q))));
+	fi;
+end;
+
+#3.4.7
+epsilonOmegaBoundB:=function(d,q,l)
+	if not l in [1,2] then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundB(d,q,l))))/LogLogOrderB(d,q);
+end;
+
+#3.4.8
+CoxeterNoB:=function(d)
+	return 2*d;
+end;
+
+#3.4.9
+SemisimpleElementOrdersB:=function(d,q)
+	local semisimpleOrders,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2Set;
+	semisimpleOrders:=[];
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				if Length(part2GreaterOne)>Length(Set(part2GreaterOne)) then
+					continue;
+				fi;
+				part2Set:=Set(part2);
+				if IsEvenInt(q) then
+					semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+				else
+					if Length(part1)+Length(part2)=1 then
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Product(List(part1Set,x->(q^x-1)/2))*Product(List(part2Set,x->(q^x+1)/2))));
+					else
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+					fi;
+				fi;
+			od;
+		od;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.4.10
+NrSemisimpleElementOrdersB:=function(d,q)
+	return Length(SemisimpleElementOrdersB(d,q));
+end;
+
+#3.4.11
+NrSemisimpleElementOrdersBoundB:=function(d,q)
+	local counter,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2Set;
+	counter:=0;
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				if Length(part2GreaterOne)>Length(Set(part2GreaterOne)) then
+					continue;
+				fi;
+				part2Set:=Set(part2);
+				if IsEvenInt(q) then
+					counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+				else
+					if Length(part1)+Length(part2)=1 then
+						counter:=counter+nrDivisors(Product(List(part1Set,x->(q^x-1)/2))*Product(List(part2Set,x->(q^x+1)/2)));
+					else
+						counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+					fi;
+				fi;
+			od;
+		od;
+	od;
+	return counter;
+end;
+
+#3.4.12
+SemisimpleElementOrdersGOOddDim:=function(n,q)
+	local d,semisimpleOrders,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2Set;
+	d:=(n-1)/2;
+	semisimpleOrders:=[];
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				if Length(part2GreaterOne)>Length(Set(part2GreaterOne)) then
+					continue;
+				fi;
+				part2Set:=Set(part2);
+				semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+			od;
+		od;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.4.13
+NrElementOrdersBoundB:=function(d,q,l)
+	local p;
+	if not l in [1,2] then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	p:=FactorsInt(q)[1];
+	if l=2 then
+		return Floor(NrSemisimpleElementOrdersB(d,q)*(1.+Ceil(Log(Float(CoxeterNoB(d)))/Log(Float(p)))));
+	fi;
+	if l=1 then
+		return Floor(NrSemisimpleElementOrdersBoundB(d,q)*(1.+Ceil(Log(Float(CoxeterNoB(d)))/Log(Float(p)))));
+	fi;
+end;
+
+#3.4.14
+epsilonQBoundB:=function(d,q,l1,l2)
+	if not ((l1 in [1,2]) and (l2 in [1,2])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [1,1], [1,2], [2,1] or [2,2].";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundB(d,q,l1)/NrElementOrdersBoundB(d,q,l2))+3.))/LogLogOrderB(d,q);
+end;
+
+#3.4.15
+epsilonQBoundBd2:=function(d)
+	return Log(Log(Float(NrAutOrbitsBoundB(d,2,2))/(64559677201.*(1.+Ceil(Log(Float(CoxeterNoB(d)))/Log(2.))))+3.))/LogLogOrderB(d,2);
+end;
+
+#3.5.1
+OrderC:=function(d,q)
+	return 1/Gcd(2,q-1)*q^(d^2)*Product(List([1..d],i->(q^(2*i)-1)));
+end;
+
+#3.5.2
+LogLogOrderC:=function(d,q)
+	return Log(-Log(Float(Gcd(2,q-1)))+Float(d^2)*Log(Float(q))+Sum(List([1..d],i->Log(Float(q^(2*i)-1)))));
+end;
+
+#3.5.3
+OrderOutC:=function(d,q)
+	local p;
+	p:=FactorsInt(q)[1];
+	return Gcd(2,q-1)*LogInt(q,p);
+end;
+
+#3.5.4
+NrConjugacyClassesSp:=function(n,q)
+	local d,t;
+	d:=n/2;
+	t:=Indeterminate(Rationals);
+	if IsEvenInt(q) then
+		return CoefficientsOfUnivariatePolynomial(Product(List([1..Int(d/4)],i->(1-t^(4*i))))*Product(List([1..Int((d+2)/4)],i->Sum(List([0..Int(d/(4*i-2))],j->t^((4*i-2)*j)))))*Product(List([1..d],i->Sum(List([0..Int(d/i)],j->t^(i*j)))))*Product(List([1..d],i->Sum(List([0..Int(d/i)],j->(q*t^i)^j)))))[d+1];
+	fi;
+	if IsOddInt(q) then
+		return CoefficientsOfUnivariatePolynomial(Product(List([1..d],i->((1+t^(2*i))^4*Sum(List([0..Int(d/i)],j->(q*t^(2*i))^j))))))[2*d+1];
+	fi;
+end;
+
+#3.5.5
+NrConjugacyClassesBoundC:=function(d,q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	if l=2 then
+		return Int(Ceil(Float(NrConjugacyClassesSp(2*d,q)/Gcd(2,q-1))));
+	fi;
+	if l=1 then
+		return Int(Ceil(Float(q^d/Gcd(2,q-1))));
+	fi;
+end;
+
+#3.5.6
+NrAutOrbitsBoundC:=function(d,q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Int(Ceil(Float(NrConjugacyClassesBoundC(d,q,l)/OrderOutC(d,q))));
+end;
+
+#3.5.7
+epsilonOmegaBoundC:=function(d,q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundC(d,q,l))))/LogLogOrderC(d,q);
+end;
+
+#3.5.8
+CoxeterNoC:=function(d)
+	return 2*d;
+end;
+
+#3.5.9
+SemisimpleElementOrdersC:=function(d,q)
+	return SemisimpleElementOrdersB(d,q);
+end;
+
+#3.5.10
+NrSemisimpleElementOrdersC:=function(d,q)
+	return Length(SemisimpleElementOrdersC(d,q));
+end;
+
+#3.5.11
+NrSemisimpleElementOrdersBoundC:=function(d,q)
+	return NrSemisimpleElementOrdersBoundB(d,q);
+end;
+
+#3.5.12
+NrElementOrdersBoundC:=function(d,q,l)
+	local p;
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	p:=FactorsInt(q)[1];
+	if l=2 then
+		return Int(Floor(NrSemisimpleElementOrdersC(d,q)*(1.+Ceil(Log(Float(CoxeterNoC(d)))/Log(Float(p))))));
+	fi;
+	if l=1 then
+		return Int(Floor(NrSemisimpleElementOrdersBoundC(d,q)*(1.+Ceil(Log(Float(CoxeterNoC(d)))/Log(Float(p))))));
+	fi;
+end;
+
+#3.5.13
+epsilonQBoundC:=function(d,q,l1,l2)
+	if not ((l1 in [1,2]) and (l2 in [1,2])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [1,1], [1,2], [2,1] or [2,2].";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundC(d,q,l1)/NrElementOrdersBoundC(d,q,l2))+3.))/LogLogOrderC(d,q);
+end;
+
+#3.5.14
+epsilonQBoundCd2:=function(d)
+	return Log(Log(NrAutOrbitsBoundC(d,2,2)/(64559677201.*(1.+Ceil(Log(Float(CoxeterNoC(d)))/Log(2.))))+3.))/LogLogOrderC(d,2);
+end;
+
+#3.6.1
+OrderD:=function(d,q)
+	return 1/Gcd(4,q^d-1)*q^(d*(d-1))*(q^d-1)*Product(List([1..d-1],i->(q^(2*i)-1)));
+end;
+
+#3.6.2
+LogLogOrderD:=function(d,q)
+	return Log(-Log(Float(Gcd(4,q^d-1)))+Float(d*(d-1))*Log(Float(q))+Sum(List([1..d-1],i->Log(Float(q^(2*i)-1)))));
+end;
+
+#3.6.3
+OrderOutD:=function(d,q)
+	local p;
+	p:=FactorsInt(q)[1];
+	if d=4 then
+		return Gcd(2,q-1)^2*LogInt(q,p)*6;
+	else
+		if IsEvenInt(d) then
+			return Gcd(2,q-1)^2*LogInt(q,p)*2;
+		else
+			return Gcd(4,q^d-1)*LogInt(q,p)*2;
+		fi;
+	fi;
+end;
+
+#3.6.4
+NrConjugacyClassesSumOmega:=function(m,q)
+	local t;
+	if not (IsEvenInt(q) and IsEvenInt(m)) then
+		return fail;
+	fi;
+	t:=Indeterminate(Rationals);
+	return CoefficientsOfUnivariatePolynomial((1/2*Product(List(List([0..Int((m/2-1)/2)],k->2*k+1),i->(1+t^i)^2*Sum(List([0..Int(m/(2*i))],j->t^(i*j)))))+3/2*Product(List([1..Int(m/2)],i->Sum(List([0..Int(m/(2*i))],j->(-t^i)^j)))))*Product(List([1..Int(m/2)],i->Sum(List([0..Int(m/(2*i))],j->(q*t^i)^j)))))[(m/2)+1];
+end;
+
+#3.6.5
+NrConjugacyClassesDifferenceOmega:=function(m,q)
+	local t;
+	if not (IsEvenInt(q) and IsEvenInt(m)) then
+		return fail;
+	fi;
+	t:=Indeterminate(Rationals);
+	return CoefficientsOfUnivariatePolynomial(2*Product(List([1..Int(m/2)],i->Sum(List([0..Int(m/(2*i))],j->(-t^i)^j))))*Product(List([1..Int(m/4)],i->Sum(List([0..Int(m/(4*i))],j->(q*t^(2*i))^j)))))[(m/2)+1];
+end;
+
+#3.6.6
+NrConjugacyClassesSumSO:=function(m,q)
+	local t;
+	if not (IsOddInt(q) and IsEvenInt(m)) then
+		return fail;
+	fi;
+	t:=Indeterminate(Rationals);
+	return CoefficientsOfUnivariatePolynomial(3/2*Product(List([1..Int(m/2)],i->((1-t^(2*i))^2*Sum(List([0..Int(m/(4*i))],j->t^(4*i*j)))^2*Sum(List([0..Int(m/(2*i))],j->(q*t^(2*i))^j)))))+1/2*Product(List([1..Int((m+1)/2)],i->(1+t^(2*i-1))^4*Sum(List([0..Int(m/(2*i))],j->(q*t^(2*i))^j)))))[m+1];
+end;
+
+#3.6.7
+NrConjugacyClassesDifferenceSO:=function(m,q)
+	local t;
+	if not (IsOddInt(q) and IsEvenInt(m)) then
+		return fail;
+	fi;
+	t:=Indeterminate(Rationals);
+	return CoefficientsOfUnivariatePolynomial(2*Product(List([1..Int(m/2)],i->Sum(List([0..Int(m/(2*i))],j->(-t^i)^j))))*Product(List([1..Int(m/4)],i->Sum(List([0..Int(m/(4*i))],j->(q*t^(2*i))^j)))))[(m/2)+1];
+end;
+
+#3.6.8
+NrConjugacyClassesSO:=function(epsilon,m,q)
+	if not (epsilon in [1,-1] and IsEvenInt(m) and IsOddInt(q)) then
+		return fail;
+	fi;
+	if epsilon=1 then
+		return (NrConjugacyClassesSumSO(m,q)+NrConjugacyClassesDifferenceSO(m,q))/2;
+	else
+		return (NrConjugacyClassesSumSO(m,q)-NrConjugacyClassesDifferenceSO(m,q))/2;
+	fi;
+end;
+
+#3.6.9
+NrConjugacyClassesOmega:=function(epsilon,m,q)
+	local d,t;
+	if not (epsilon in [1,-1] and IsEvenInt(m)) then
+		return fail;
+	fi;
+	if IsEvenInt(q) then
+		if epsilon=1 then
+			return (NrConjugacyClassesSumOmega(m,q)+NrConjugacyClassesDifferenceOmega(m,q))/2;
+		else
+			return (NrConjugacyClassesSumOmega(m,q)-NrConjugacyClassesDifferenceOmega(m,q))/2;
+		fi;
+	else
+		d:=m/2;
+		if (epsilon=1 and (q mod 3)=4 and (d mod 2)=1) or (epsilon=-1 and ((q mod 4)=1 or (d mod 2)=0)) then
+			return 1/2*NrConjugacyClassesSO(epsilon,m,q);
+		else
+			t:=Indeterminate(Rationals);
+			if epsilon=1 then
+				return CoefficientsOfUnivariatePolynomial(3/8*Product(List([1..d],i->(Sum(List([0..Int(d/i)],j->(-t^(2*i))^j))^2*Sum(List([0..Int(d/i)],j->(q*t^(2*i))^j)))))+1/8*Product(List([1..d],i->((1+t^(2*i-1))^4*Sum(List([0..Int(d/i)],j->(q*t^(2*i))^j)))))+3/2*Product(List(List([0..d-1],k->2*k+1),i->(1+t^i)^2))*Product(List([1..Int(d/2)],i->Sum(List([0..Int(d/(2*i))],j->(q*t^(4*i))^j))))+2*Product(List(List([0..Int((d-1)/2)],k->2*k+1),i->(1-t^(2*i))))*Product(List([1..Int(d/2)],i->Sum(List([0..Int(d/(2*i))],j->(q*t^(4*i))^j)))))[m+1];
+			else
+				return CoefficientsOfUnivariatePolynomial(3/8*Product(List([1..d],i->(Sum(List([0..Int(d/i)],j->(-t^(2*i))^j))^2*Sum(List([0..Int(d/i)],j->(q*t^(2*i))^j)))))+1/8*Product(List([1..d],i->((1+t^(2*i-1))^4*Sum(List([0..Int(d/i)],j->(q*t^(2*i))^j)))))+3/2*Product(List(List([0..d-1],k->2*k+1),i->(1+t^i)^2))*Product(List([1..Int(d/2)],i->Sum(List([0..Int(d/(2*i))],j->(q*t^(4*i))^j))))+Product(List(List([0..Int((d-1)/2)],k->2*k+1),i->(1-t^(2*i))))*Product(List([1..Int(d/2)],i->Sum(List([0..Int(d/(2*i))],j->(q*t^(4*i))^j)))))[m+1];
+			fi;
+		fi;
+	fi;
+end;
+
+#3.6.10
+NrConjugacyClassesBoundD:=function(d,q,l)
+	local n,t;
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	if l=2 then
+		n:=2*d;
+		t:=Indeterminate(Rationals);
+		if IsEvenInt(q) then
+			return NrConjugacyClassesOmega(1,n,q);
+		else
+			if ((q mod 3)=4 and IsOddInt(d)) then
+				return 1/2*NrConjugacyClassesSO(1,n,q);
+			else
+				return Int(NrConjugacyClassesOmega(1,n,q)/2+1/2);
+			fi;
+		fi;
+	fi;
+	if l=1 then
+		return Int(Ceil(Float(q^d/Gcd(2,q-1)^2)));
+	fi;
+end;
+
+#3.6.11
+NrAutOrbitsBoundD:=function(d,q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Int(Ceil(Float(NrConjugacyClassesBoundD(d,q,l)/OrderOutD(d,q))));
+end;
+
+#3.6.12
+epsilonOmegaBoundD:=function(d,q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundD(d,q,l))))/LogLogOrderD(d,q);
+end;
+
+#3.6.13
+CoxeterNoD:=function(d)
+	return 2*d-2;
+end;
+
+#3.6.14
+SemisimpleElementOrdersD:=function(d,q)
+	local semisimpleOrders,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2GreaterOneSet,test,n,part2Set,s,dyadicValuations;
+	semisimpleOrders:=[];
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				if IsOddInt(Length(part2)) then
+					continue;
+				fi;
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				part2GreaterOneSet:=Set(part2GreaterOne);
+				if Length(part2GreaterOne)>Length(part2GreaterOneSet) then
+					test:=true;
+					for n in part2GreaterOneSet do
+						if IsOddInt(n) and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					for n in part2GreaterOneSet do
+						if IsEvenInt(n) and n>=4 and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					if Length(Positions(part2GreaterOne,2))>=3 then
+						continue;
+					fi;
+				fi;
+				part2Set:=Set(part2);
+				s:=Length(part1)+Length(part2);
+				if s=1 then
+					if IsEvenInt(q) then
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^(part1[1])-1));
+						continue;
+					else
+						if ((q mod 4)=3 and IsOddInt(d)) then
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^(part1[1])-1)/2));
+							continue;
+						else
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^(part1[1])-1)/4));
+							continue;
+						fi;
+					fi;
+				fi;
+				if s=2 then
+					if IsEvenInt(q) then
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+						continue;
+					else
+						if ((q mod 4)=3 and IsOddInt(d)) then
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+							continue;
+						else
+							dyadicValuations:=Concatenation(List(part1,x->2^(Length(Positions(FactorsInt(q^x-1),2)))),List(part2,x->2^(Length(Positions(FactorsInt(q^x+1),2)))));
+							if IsOddInt(Sum(dyadicValuations)/Minimum(dyadicValuations)) then
+								semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+								continue;
+							else
+								semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))/2));
+								continue;
+							fi;
+						fi;
+					fi;
+				fi;
+				semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+			od;
+		od;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.6.15
+NrSemisimpleElementOrdersD:=function(d,q)
+	return Length(SemisimpleElementOrdersD(d,q));
+end;
+
+#3.6.16
+NrSemisimpleElementOrdersBoundD:=function(d,q)
+	local counter,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2GreaterOneSet,test,n,part2Set,s,dyadicValuations;
+	counter:=0;
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				if IsOddInt(Length(part2)) then
+					continue;
+				fi;
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				part2GreaterOneSet:=Set(part2GreaterOne);
+				if Length(part2GreaterOne)>Length(part2GreaterOneSet) then
+					test:=true;
+					for n in part2GreaterOneSet do
+						if IsOddInt(n) and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					for n in part2GreaterOneSet do
+						if IsEvenInt(n) and n>=4 and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					if Length(Positions(part2GreaterOne,2))>=3 then
+						continue;
+					fi;
+				fi;
+				part2Set:=Set(part2);
+				s:=Length(part1)+Length(part2);
+				if s=1 then
+					if IsEvenInt(q) then
+						counter:=counter+nrDivisors(q^(part1[1])-1);
+						continue;
+					else
+						if ((q mod 4)=3 and IsOddInt(d)) then
+							counter:=counter+nrDivisors((q^(part1[1])-1)/2);
+							continue;
+						else
+							counter:=counter+nrDivisors((q^(part1[1])-1)/4);
+							continue;
+						fi;
+					fi;
+				fi;
+				if s=2 then
+					if IsEvenInt(q) then
+						counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+						continue;
+					else
+						if ((q mod 4)=3 and IsOddInt(d)) then
+							counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+							continue;
+						else
+							dyadicValuations:=Concatenation(List(part1,x->2^(Length(Positions(FactorsInt(q^x-1),2)))),List(part2,x->2^(Length(Positions(FactorsInt(q^x+1),2)))));
+							if IsOddInt(Sum(dyadicValuations)/Minimum(dyadicValuations)) then
+								counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+								continue;
+							else
+								counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))/2);
+								continue;
+							fi;
+						fi;
+					fi;
+				fi;
+				counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+			od;
+		od;
+	od;
+	return counter;
+end;
+
+#3.6.17
+SemisimpleElementOrdersGOEvenDim:=function(epsilon,n,q)
+	local d,semisimpleOrders,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2GreaterOneSet,test,m,part2Set;
+	d:=n/2;
+	semisimpleOrders:=[];
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				if epsilon=1 then
+					if IsOddInt(Length(part2)) then
+						continue;
+					fi;
+				else
+					if IsEvenInt(Length(part2)) then
+						continue;
+					fi;
+				fi;
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				part2GreaterOneSet:=Set(part2GreaterOne);
+				if Length(part2GreaterOne)>Length(part2GreaterOneSet) then
+					test:=true;
+					for m in part2GreaterOneSet do
+						if IsOddInt(m) and Length(Positions(part2GreaterOne,m))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					for m in part2GreaterOneSet do
+						if IsEvenInt(m) and m>=4 and Length(Positions(part2GreaterOne,m))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					if Length(Positions(part2GreaterOne,2))>=3 then
+						continue;
+					fi;
+				fi;
+				part2Set:=Set(part2);
+				semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+			od;
+		od;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.6.18
+NrElementOrdersSharplyDivisibleByPToEBoundD:=function(d,q,e)
+	local p;
+	p:=FactorsInt(q)[1];
+	if e=0 then
+		return NrSemisimpleElementOrdersD(d,q);
+	fi;
+	if p^(e-1)+1=2*d-2 then
+		return 1;
+	fi;
+	return Length(Union(Union(List(List(SemisimpleElementOrdersGOOddDim(2*d-p^(e-1)-2,q),o->Lcm(2,o)),x->DivisorsInt(x))),Union(List(List(SemisimpleElementOrdersGOEvenDim(1,2*d-2*(p^(e-1)+1),q),o->Lcm(q+1,o)),x->DivisorsInt(x)))));
+end;
+
+#3.6.19
+NrElementOrdersBoundD:=function(d,q,l)
+	local p;
+	if not (l in [1,2,3]) then
+		return "This quality level is not available. Please set the quality level to 1, 2 or 3.";
+	fi;
+	p:=FactorsInt(q)[1];
+	if l=3 then
+		return Sum(List([0..1+Int(Log(Float(2*d-3))/Log(Float(p)))],e->NrElementOrdersSharplyDivisibleByPToEBoundD(d,q,e)));
+	fi;
+	if l=2 then
+		return Floor(Float(NrSemisimpleElementOrdersD(d,q))*(1.+Ceil(Log(Float(CoxeterNoD(d)))/Log(Float(p)))));
+	fi;
+	if l=1 then
+		return Floor(Float(NrSemisimpleElementOrdersBoundD(d,q))*(1.+Ceil(Log(Float(CoxeterNoD(d)))/Log(Float(p)))));
+	fi;
+end;
+
+#3.6.20
+epsilonQBoundD:=function(d,q,l1,l2)
+	if not ((l1 in [1,2]) and (l2 in [1,2,3])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [1,1], [1,2], [1,3], [2,1], [2,2] or [2,3].";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBoundD(d,q,l1)/NrElementOrdersBoundD(d,q,l2))+3.))/LogLogOrderD(d,q);
+end;
+
+#3.6.21
+epsilonQBoundDd2:=function(d)
+	return Log(Log(Float(NrAutOrbitsBoundD(d,2,2)/(15931588348*(1+Int(Ceil(Log(Float(2*d-2))/Log(2.))))))+3.))/LogLogOrderD(d,2);
+end;
+
+#3.7.1
+Order2D:=function(d,Q)
+	local q;
+	q:=Sqrt(Q);
+	return 1/Gcd(4,q^d+1)*q^(d*(d-1))*(q^d+1)*Product(List([1..d-1],i->q^(2*i)-1));
+end;
+
+#3.7.2
+LogLogOrder2D:=function(d,Q)
+	local q;
+	q:=Sqrt(Q);
+	return Log(-Log(Float(Gcd(4,q^d+1)))+Float(d*(d-1))*Log(Float(q))+Log(Float(q^d+1))+Sum(List([1..d-1],i->Log(Float(q^(2*i)-1)))));
+end;
+
+#3.7.3
+OrderOut2D:=function(d,Q)
+	local q,p;
+	q:=Sqrt(Q);
+	p:=FactorsInt(Q)[1];
+	return Gcd(4,q^d+1)*LogInt(Q,p);
+end;
+
+#3.7.4
+NrConjugacyClassesBound2D:=function(d,Q,l)
+	local q;
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	q:=Sqrt(Q);
+	if l=2 then
+		if IsEvenInt(q) then
+			return NrConjugacyClassesOmega(-1,2*d,q);
+		else
+			if ((q mod 4)=1 or IsEvenInt(d)) then
+				return 1/2*NrConjugacyClassesSO(-1,2*d,q);
+			else
+				return Int(NrConjugacyClassesOmega(-1,2*d,q)/2+1/2);
+			fi;
+		fi;
+	fi;
+	if l=1 then
+		return Int(Ceil(Float(q^d/Gcd(2,q-1)^2)));
+	fi;
+end;
+
+#3.7.5
+NrAutOrbitsBound2D:=function(d,Q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Int(Ceil(Float(NrConjugacyClassesBound2D(d,Q,l)/OrderOut2D(d,Q))));
+end;
+
+#3.7.6
+epsilonOmegaBound2D:=function(d,Q,l)
+	if not (l in [1,2]) then
+		return "This quality level is not available. Please set the quality level to 1 or 2.";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBound2D(d,Q,l))))/LogLogOrder2D(d,Q);
+end;
+
+#3.7.7
+SemisimpleElementOrders2D:=function(d,Q)
+	local q,semisimpleOrders,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2GreaterOneSet,test,n,part2Set,s,dyadicValuations;
+	q:=Sqrt(Q);
+	semisimpleOrders:=[];
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				if IsEvenInt(Length(part2)) then
+					continue;
+				fi;
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				part2GreaterOneSet:=Set(part2GreaterOne);
+				if Length(part2GreaterOne)>Length(part2GreaterOneSet) then
+					test:=true;
+					for n in part2GreaterOneSet do
+						if IsOddInt(n) and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					for n in part2GreaterOneSet do
+						if IsEvenInt(n) and n>=4 and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					if Length(Positions(part2GreaterOne,2))>=3 then
+						continue;
+					fi;
+				fi;
+				part2Set:=Set(part2);
+				s:=Length(part1)+Length(part2);
+				if s=1 then
+					if IsEvenInt(q) then
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^(part2[1])+1));
+						continue;
+					else
+						if ((q mod 4)=1 or IsEvenInt(d)) then
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^(part2[1])+1)/2));
+							continue;
+						else
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^(part2[1])+1)/4));
+							continue;
+						fi;
+					fi;
+				fi;
+				if s=2 then
+					if IsEvenInt(q) then
+						semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+						continue;
+					else
+						if ((q mod 4)=1 or IsEvenInt(d)) then
+							semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+							continue;
+						else
+							dyadicValuations:=Concatenation(List(part1,x->2^(Length(Positions(FactorsInt(q^x-1),2)))),List(part2,x->2^(Length(Positions(FactorsInt(q^x+1),2)))));
+							if IsOddInt(Sum(dyadicValuations)/Minimum(dyadicValuations)) then
+								semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+								continue;
+							else
+								semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))/2));
+								continue;
+							fi;
+						fi;
+					fi;
+				fi;
+				semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))));
+			od;
+		od;
+	od;
+	return semisimpleOrders;
+end;
+
+#3.7.8
+NrSemisimpleElementOrders2D:=function(d,Q)
+	return Length(SemisimpleElementOrders2D(d,Q));
+end;
+
+#3.7.9
+NrSemisimpleElementOrdersBound2D:=function(d,Q)
+	local q,counter,d1,d2,it1,it2,part1,part1GreaterOne,part1Set,part2,part2GreaterOne,part2GreaterOneSet,test,n,part2Set,s,dyadicValuations;
+	q:=Sqrt(Q);
+	counter:=0;
+	for d1 in [0..d] do
+		d2:=d-d1;
+		if d1=0 then
+			it1:=[[]];
+		else
+			it1:=IteratorOfPartitions(d1);
+		fi;
+		if d2=0 then
+			it2:=[[]];
+		else
+			it2:=IteratorOfPartitions(d2);
+		fi;
+		for part1 in it1 do
+			part1GreaterOne:=part1{Difference([1..Length(part1)],Positions(part1,1))};
+			if Length(part1GreaterOne)>Length(Set(part1GreaterOne)) then
+				continue;
+			fi;
+			part1Set:=Set(part1);
+			for part2 in it2 do
+				if IsEvenInt(Length(part2)) then
+					continue;
+				fi;
+				part2GreaterOne:=part2{Difference([1..Length(part2)],Positions(part2,1))};
+				part2GreaterOneSet:=Set(part2GreaterOne);
+				if Length(part2GreaterOne)>Length(part2GreaterOneSet) then
+					test:=true;
+					for n in part2GreaterOneSet do
+						if IsOddInt(n) and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					for n in part2GreaterOneSet do
+						if IsEvenInt(n) and n>=4 and Length(Positions(part2GreaterOne,n))>1 then
+							test:=false;
+							break;
+						fi;
+					od;
+					if not test then
+						continue;
+					fi;
+					if Length(Positions(part2GreaterOne,2))>=3 then
+						continue;
+					fi;
+				fi;
+				part2Set:=Set(part2);
+				s:=Length(part1)+Length(part2);
+				if s=1 then
+					if IsEvenInt(q) then
+						counter:=counter+nrDivisors(q^(part2[1])+1);
+						continue;
+					else
+						if ((q mod 4)=1 or IsEvenInt(d)) then
+							counter:=counter+nrDivisors((q^(part2[1])+1)/2);
+							continue;
+						else
+							counter:=counter+nrDivisors((q^(part2[1])+1)/4);
+							continue;
+						fi;
+					fi;
+				fi;
+				if s=2 then
+					if IsEvenInt(q) then
+						counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+						continue;
+					else
+						if ((q mod 4)=1 or IsEvenInt(d)) then
+							counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+							continue;
+						else
+							dyadicValuations:=Concatenation(List(part1,x->2^(Length(Positions(FactorsInt(q^x-1),2)))),List(part2,x->2^(Length(Positions(FactorsInt(q^x+1),2)))));
+							if IsOddInt(Sum(dyadicValuations)/Minimum(dyadicValuations)) then
+								counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+								continue;
+							else
+								counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1)))/2);
+								continue;
+							fi;
+						fi;
+					fi;
+				fi;
+				counter:=counter+nrDivisors(Lcm(lcm(List(part1Set,x->q^x-1)),lcm(List(part2Set,x->q^x+1))));
+			od;
+		od;
+	od;
+	return counter;
+end;
+
+#3.7.10
+NrElementOrdersSharplyDivisibleByPToEBound2D:=function(d,Q,e)
+	local q,p;
+	q:=Sqrt(Q);
+	p:=FactorsInt(q)[1];
+	if e=0 then
+		return NrSemisimpleElementOrders2D(d,Q);
+	fi;
+	return Length(Union(Union(List(List(SemisimpleElementOrdersGOOddDim(2*d-p^(e-1)-2,q),o->Lcm(2,o)),x->DivisorsInt(x))),Union(List(List(SemisimpleElementOrdersGOEvenDim(-1,2*d-2*(p^(e-1)+1),q),o->Lcm(q+1,o)),x->DivisorsInt(x)))));
+end;
+
+#3.7.11
+NrElementOrdersBound2D:=function(d,Q,l)
+	local p;
+	if not (l in [1,2,3]) then
+		return "This quality level is not available. Please set the quality level to 1, 2 or 3.";
+	fi;
+	p:=FactorsInt(Q)[1];
+	if l=3 then
+		return Sum(List([0..1+Int(Log(Float(2*d-3))/Log(Float(p)))],e->NrElementOrdersSharplyDivisibleByPToEBound2D(d,Q,e)));
+	fi;
+	if l=2 then
+		return Float(NrSemisimpleElementOrders2D(d,Q))*(1.+Ceil(Log(Float(CoxeterNoD(d)))/Log(Float(p))));
+	fi;
+	if l=1 then
+		return Float(NrSemisimpleElementOrdersBound2D(d,Q))*(1.+Ceil(Log(Float(CoxeterNoD(d)))/Log(Float(p))));
+	fi;
+end;
+
+#3.7.12
+epsilonQBound2D:=function(d,Q,l1,l2)
+	if not ((l1 in [1,2]) and (l2 in [1,2,3])) then
+		return "This combination of quality levels is not available. Please set the quality levels to [1,1], [1,2], [1,3], [2,1], [2,2] or  [2,3].";
+	fi;
+	return Log(Log(Float(NrAutOrbitsBound2D(d,Q,l1)/NrElementOrdersBound2D(d,Q,l2))+3.))/LogLogOrder2D(d,Q);
+end;
+
+#3.7.13
+epsilonQBound2Dd4:=function(d)
+	return Log(Log(Float(NrAutOrbitsBound2D(d,4,2)/(12297818620.*(1+Int(Ceil(Log(Float(2*d-2))/Log(2.))))))))/LogLogOrder2D(d,4);
+end;
+
+#3.8.1
+Order2B2:=function(Q)
+	return Q^2*(Q^2+1)*(Q-1);
+end;
+
+#3.8.2
+LogLogOrder2B2:=function(Q)
+	return Log(2.*Log(Float(Q))+Log(Float(Q^2+1))+Log(Float(Q-1)));
+end;
+
+#3.8.3
+OrderOut2B2:=function(Q)
+	return LogInt(Q,2);
+end;
+
+#3.8.4
+NrConjugacyClasses2B2:=function(Q)
+	return Q+3;
+end;
+
+#3.8.5
+NrAutOrbitsBound2B2:=function(Q)
+	return Int(Ceil(Float(NrConjugacyClasses2B2(Q)/OrderOut2B2(Q))));
+end;
+
+#3.8.6
+epsilonOmegaBound2B2:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2B2(Q))))/Log(Log(Float(Order2B2(Q))));
+end;
+
+#3.8.7
+SemisimpleElementOrders2B2:=function(Q)
+	local q,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	nuSet:=[q^2-1,q^2-Sqrt(2)*q+1,q^2+Sqrt(2)*q+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.8.8
+NrSemisimpleElementOrders2B2:=function(Q)
+	return Length(SemisimpleElementOrders2B2(Q));
+end;
+
+#3.8.9
+ElementOrders2B2:=function(Q)
+	local q,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	nuSet:=[q^2-1,q^2-Sqrt(2)*q+1,q^2+Sqrt(2)*q+1,4];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.8.10
+NrElementOrders2B2:=function(Q)
+	return Length(ElementOrders2B2(Q));
+end;
+
+#3.8.11
+epsilonQBound2B2:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2B2(Q)/NrElementOrders2B2(Q))+3.))/LogLogOrder2B2(Q);
+end;
+
+#3.9.1
+OrderG2:=function(q)
+	return q^6*(q^6-1)*(q^2-1);
+end;
+
+#3.9.2
+LogLogOrderG2:=function(q)
+	return Log(6.*Log(Float(q))+Log(Float(q^6-1))+Log(Float(q^2-1)));
+end;
+
+#3.9.3
+OrderOutG2:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	if (q mod 3) in [1,2] then
+		return LogInt(q,p);
+	else
+		return LogInt(q,p)*2;
+	fi;
+end;
+
+#3.9.4
+NrConjugacyClassesG2:=function(q)
+	if (q mod 6) in [1,5] then
+		return q^2+2*q+9;
+	fi;
+	if (q mod 6) in [2,3,4] then
+		return q^2*2*q+8;
+	fi;
+end;
+
+#3.9.5
+NrAutOrbitsBoundG2:=function(q)
+	return Int(Ceil(Float(NrConjugacyClassesG2(q)/OrderOutG2(q))));
+end;
+
+#3.9.6
+epsilonOmegaBoundG2:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundG2(q))))/Log(Log(Float(OrderG2(q))));
+end;
+
+#3.9.7
+CoxeterNoG2:=function()
+	return 6;
+end;
+
+#3.9.8
+SemisimpleElementOrdersG2:=function(q)
+	local nuSet,ordersSet,n;
+	nuSet:=[q^2-1,q^2+q+1,q^2-q+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.9.9
+NrSemisimpleElementOrdersG2:=function(q)
+	return Length(SemisimpleElementOrdersG2(q));
+end;
+
+#3.9.10
+ElementOrdersG2:=function(q)
+	local p,nuSet,ordersSet,n;
+	p:=FactorsInt(q)[1];
+	if p>5 then
+		nuSet:=[q^2-1,q^2+q+1,q^2-q+1,p*(q+1),p*(q-1)];
+	fi;
+	if p in [3,5] then
+		nuSet:=[q^2-1,q^2+q+1,q^2-q+1,p*(q+1),p*(q-1),p^2];
+	fi;
+	if p=2 then
+		nuSet:=[q^2-1,q^2+q+1,q^2-q+1,2*(q+1),2*(q-1),8,12];
+	fi;
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.9.11
+NrElementOrdersG2:=function(q)
+	return Length(ElementOrdersG2(q));
+end;
+
+#3.9.12
+epsilonQBoundG2:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundG2(q)/NrElementOrdersG2(q))+3.))/LogLogOrderG2(q);
+end;
+
+#3.10.1
+Order2G2:=function(Q)
+	return Q^3*(Q^3+1)*(Q-1);
+end;
+
+#3.10.2
+LogLogOrder2G2:=function(Q)
+	return Log(3.*Log(Float(Q))+Log(Float(Q^3+1))+Log(Float(Q-1)));
+end;
+
+#3.10.3
+OrderOut2G2:=function(Q)
+	return LogInt(Q,3);
+end;
+
+#3.10.4
+NrConjugacyClasses2G2:=function(Q)
+	return Q+8;
+end;
+
+#3.10.5
+NrAutOrbitsBound2G2:=function(Q)
+	return Int(Ceil(Float(NrConjugacyClasses2G2(Q)/OrderOut2G2(Q))));
+end;
+
+#3.10.6
+epsilonOmegaBound2G2:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2G2(Q))))/LogLogOrder2G2(Q);
+end;
+
+#3.10.7
+SemisimpleElementOrders2G2:=function(Q)
+	local nuSet,ordersSet,n;
+	nuSet:=[Q-1,(Q+1)/2,Q-Sqrt(3*Q)+1,Q+Sqrt(3*Q)+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.10.8
+NrSemisimpleElementOrders2G2:=function(Q)
+	return Length(SemisimpleElementOrders2G2(Q));
+end;
+
+#3.10.9
+ElementOrders2G2:=function(Q)
+	local nuSet,ordersSet,n;
+	nuSet:=[Q-1,(Q+1)/2,Q-Sqrt(3*Q)+1,Q+Sqrt(3*Q)+1,6,9];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.10.10
+NrElementOrders2G2:=function(Q)
+	return Length(ElementOrders2G2(Q));
+end;
+
+#3.10.11
+epsilonQBound2G2:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2G2(Q)/NrElementOrders2G2(Q))+3.))/LogLogOrder2G2(Q);
+end;
+
+#3.11.1
+Order3D4:=function(Q)
+	local q;
+	q:=RootInt(Q,3);
+	return q^12*(q^8+q^4+1)*(q^6-1)*(q^2-1);
+end;
+
+#3.11.2
+LogLogOrder3D4:=function(Q)
+	local q;
+	q:=RootInt(Q,3);
+	return Log(12.*Log(Float(q))+Log(Float(q^8+q^4+1))+Log(Float(q^6-1))+Log(Float(q^2-1)));
+end;
+
+#3.11.3
+OrderOut3D4:=function(Q)
+	local p;
+	p:=FactorsInt(Q)[1];
+	return LogInt(Q,p);
+end;
+
+#3.11.4
+NrConjugacyClasses3D4:=function(Q)
+	local q;
+	q:=RootInt(Q,3);
+	if IsEvenInt(q) then
+		return q^4+q^3+q^2+q+5;
+	else
+		return q^4+q^3+q^2+q+6;
+	fi;
+end;
+
+#3.11.5
+NrAutOrbitsBound3D4:=function(Q)
+	return Int(Ceil(Float(NrConjugacyClasses3D4(Q)/OrderOut3D4(Q))));
+end;
+
+#3.11.6
+epsilonOmegaBound3D4:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound3D4(Q))))/Log(Log(Float(Order3D4(Q))));
+end;
+
+#3.11.7
+SemisimpleElementOrders3D4:=function(Q)
+	local q,nuSet,ordersSet,n;
+	q:=RootInt(Q,3);
+	nuSet:=[(q-1)*(q^3+1),(q+1)*(q^3-1),q^4-q^2+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.11.8
+NrSemisimpleElementOrders3D4:=function(Q)
+	return Length(SemisimpleElementOrders3D4(Q));
+end;
+
+#3.11.9
+ElementOrders3D4:=function(Q)
+	local q,p,nuSet,ordersSet,n;
+	q:=RootInt(Q,3);
+	p:=FactorsInt(q)[1];
+	nuSet:=[(q-1)*(q^3+1),(q+1)*(q^3-1),q^4-q^2+1,p*(q^3-1),p*(q^3+1)];
+	if p in [3,5] then
+		nuSet:=Union(nuSet,[p^2]);
+	fi;
+	if p=2 then
+		nuSet:=Union(nuSet,[4*(q^2+q+1),4*(q^2-q+1),8]);
+	fi;
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.11.10
+NrElementOrders3D4:=function(Q)
+	return Length(ElementOrders3D4(Q));
+end;
+
+#3.11.11
+epsilonQBound3D4:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound3D4(Q)/NrElementOrders3D4(Q))+3.))/LogLogOrder3D4(Q);
+end;
+
+#3.12.1
+OrderF4:=function(q)
+	return q^24*(q^12-1)*(q^8-1)*(q^6-1)*(q^2-1);
+end;
+
+#3.12.2
+LogLogOrderF4:=function(q)
+	return Log(24.*Log(Float(q))+Log(Float(q^12-1))+Log(Float(q^8-1))+Log(Float(q^6-1))+Log(Float(q^2-1)));
+end;
+
+#3.12.3
+OrderOutF4:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	if IsOddInt(q) then
+		return LogInt(q,p);
+	else
+		return LogInt(q,p)*2;
+	fi;
+end;
+
+#3.12.4
+NrConjugacyClassesF4:=function(q)
+	if (q mod 12) in [1,5,7,11] then
+		return q^4+2*q^3+7*q^2+15*q+31;
+	fi;
+	if IsEvenInt(q) then
+		return q^4+2*q^3+6*q^2+10*q+19;
+	fi;
+	if (q mod 3)=0 then
+		return q^4+2*q^3+7*q^2+15*q+30;
+	fi;
+end;
+
+#3.12.5
+NrAutOrbitsBoundF4:=function(q)
+	return Int(Ceil(Float(NrConjugacyClassesF4(q)/OrderOutF4(q))));
+end;
+
+#3.12.6
+epsilonOmegaBoundF4:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundF4(q))))/Log(Log(Float(OrderF4(q))));
+end;
+
+#3.12.7
+CoxeterNoF4:=function()
+	return 12;
+end;
+
+#3.12.8
+SemisimpleElementOrdersF4:=function(q)
+	local nuSet,ordersSet,n;
+	nuSet:=[q^4-q^2+1,q^4+1,(q^2+q+1)*(q^2-1),(q^2-q+1)*(q^2-1),(q^4-1)/Gcd(2,q-1)];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.12.9
+NrSemisimpleElementOrdersF4:=function(q)
+	return Length(SemisimpleElementOrdersF4(q));
+end;
+
+#3.12.10
+ElementOrdersF4:=function(q)
+	local p,nuSet,ordersSet,n;
+	p:=FactorsInt(q)[1];
+	nuSet:=[q^4-q^2+1,q^4+1,(q^2+q+1)*(q^2-1),(q^2-q+1)*(q^2-1),(q^4-1)/Gcd(2,q-1),p*(q^3+1),p*(q^3-1),p*(q^2+1)*(q+1),p*(q^2+1)*(q-1),p*(q^2-1)];
+	if p=2 then
+		nuSet:=Union(nuSet,[4*(q^2+1),4*(q^2-1),4*(q^2+q+1),4*(q^2-q+1),8*(q+1),8*(q-1),16]);
+	fi;
+	if p=3 then
+		nuSet:=Union(nuSet,[9*(q^2+1),9*(q^2-1),27]);
+	fi;
+	if p=5 then
+		nuSet:=Union(nuSet,[25*(q+1),25*(q-1)]);
+	fi;
+	if p=7 then
+		nuSet:=Union(nuSet,[49*2]);
+	fi;
+	if p=11 then
+		nuSet:=Union(nuSet,[121]);
+	fi;
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.12.11
+NrElementOrdersF4:=function(q)
+	return Length(ElementOrdersF4(q));
+end;
+
+#3.12.12
+epsilonQBoundF4:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundF4(q)/NrElementOrdersF4(q))+3.))/LogLogOrderF4(q);
+end;
+
+#3.13.1
+Order2F4:=function(Q)
+	return Q^12*(Q^6+1)*(Q^4-1)*(Q^3+1)*(Q-1);
+end;
+
+#3.13.2
+LogLogOrder2F4:=function(Q)
+	return Log(12.*Log(Float(Q))+Log(Float(Q^6+1))+Log(Float(Q^4-1))+Log(Float(Q^3+1))+Log(Float(Q-1)));
+end;
+
+#3.13.3
+OrderOut2F4:=function(Q)
+	return LogInt(Q,2);
+end;
+
+#3.13.4
+NrConjugacyClasses2F4:=function(Q)
+	return Q^2+4*Q+17;
+end;
+
+#3.13.5
+NrAutOrbitsBound2F4:=function(Q)
+	return Int(Ceil(Float(NrConjugacyClasses2F4(Q)/OrderOut2F4(Q))));
+end;
+
+#3.13.6
+epsilonOmegaBound2F4:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2F4(Q))))/Log(Log(Float(Order2F4(Q))));
+end;
+
+#3.13.7
+SemisimpleElementOrders2F4:=function(Q)
+	local q,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	nuSet:=[q^4-1,q^4+1,q^4-q^2+1,(q^2-1)*(q^2+Sqrt(2)*q+1),(q^2-1)*(q^2-Sqrt(2)*q+1),q^4+Sqrt(2)*q^3+q^2+Sqrt(2)*q+1,q^4-Sqrt(2)*q^3+q^2-Sqrt(2)*q+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.13.8
+NrSemisimpleElementOrders2F4:=function(Q)
+	return Length(SemisimpleElementOrders2F4(Q));
+end;
+
+#3.13.9
+ElementOrders2F4:=function(Q)
+	local q,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	nuSet:=[16,12,2*(q^2+1),4*(q^2-1),4*(q^2+Sqrt(2)*q+1),4*(q^2-Sqrt(2)*q+1),q^4-1,q^4+1,q^4-q^2+1,(q^2-1)*(q^2+Sqrt(2)*q+1),(q^2-1)*(q^2-Sqrt(2)*q+1),q^4+Sqrt(2)*q^3+q^2+Sqrt(2)*q+1,q^4-Sqrt(2)*q^3+q^2-Sqrt(2)*q+1];
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.13.10
+NrElementOrders2F4:=function(Q)
+	return Length(ElementOrders2F4(Q));
+end;
+
+#3.13.11
+epsilonQBound2F4:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2F4(Q)/NrElementOrders2F4(Q))+3.))/LogLogOrder2F4(Q);
+end;
+
+#3.14.1
+OrderE6:=function(q)
+	return 1/Gcd(3,q-1)*q^36*(q^12-1)*(q^9-1)*(q^8-1)*(q^6-1)*(q^5-1)*(q^2-1);
+end;
+
+#3.14.2
+LogLogOrderE6:=function(q)
+	return Log(-Log(Float(Gcd(3,q-1)))+36.*Log(Float(q))+Log(Float(q^12-1))+Log(Float(q^9-1))+Log(Float(q^8-1))+Log(Float(q^6-1))+Log(Float(q^5-1))+Log(Float(q^2-1)));
+end;
+
+#3.14.3
+OrderOutE6:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	return Gcd(3,q-1)*LogInt(q,p)*2;
+end;
+
+#3.14.4
+NrConjugacyClassesBoundE6:=function(q)
+	if (q mod 6)=1 then
+		return q^6+q^5+2*q^4+2*q^3+9*q^2+9*q+22;
+	fi;
+	if (q mod 6)=2 then
+		return q^6+q^5+2*q^4+2*q^3+6*q^2+4*q+4;
+	fi;
+	if (q mod 6)=3 then
+		return (q^6+q^5+2*q^4+2*q^3+7*q^2+5*q+3)/3;
+	fi;
+	if (q mod 6)=4 then
+		return q^6+q^5+2*q^4+2*q^3+8*q^2+8*q+20;
+	fi;
+	if (q mod 6)=5 then
+		return q^6+q^5+2*q^4+2*q^3+7*q^2+5*q+4;
+	fi;
+end;
+
+#3.14.5
+NrAutOrbitsBoundE6:=function(q)
+	return Int(Ceil(Float(NrConjugacyClassesBoundE6(q)/OrderOutE6(q))));
+end;
+
+#3.14.6
+epsilonOmegaBoundE6:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE6(q))))/Log(Log(Float(OrderE6(q))));
+end;
+
+#3.14.7
+CoxeterNoE6:=function()
+	return 12;
+end;
+
+#3.14.8
+NrSemisimpleElementOrdersE6:=function(q)
+	local p,d,nuSet,ordersSet,n;
+	p:=FactorsInt(q)[1];
+	d:=Gcd(3,q-1);
+	nuSet:=[(q^6-1)/d,(q^6+q^3+1)/d,(q^2+q+1)*(q^4-q^2+1)/d,(q-1)*(q^2+1)*(q^3+1)/d,(q^2-1)*(q^4+1)/d,(q+1)*(q^5-1)/d,q^5-1];
+	nuSet:=Set(nuSet);
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.14.9
+NrSemisimpleElementOrdersE6:=function(q)
+	return Length(NrSemisimpleElementOrdersE6(q));
+end;
+
+#3.14.10
+ElementOrdersE6:=function(q)
+	local p,d,nuSet,ordersSet,n;
+	p:=FactorsInt(q)[1];
+	d:=Gcd(3,q-1);
+	nuSet:=[(q^6-1)/d,(q^6+q^3+1)/d,(q^2+q+1)*(q^4-q^2+1)/d,(q-1)*(q^2+1)*(q^3+1)/d,(q^2-1)*(q^4+1)/d,(q+1)*(q^5-1)/d,q^5-1];
+	nuSet:=Union(nuSet,p*[(q^6-1)/(d*(q-1)),(q^5-1)/d,q^4-1,(q^3-1)*(q+1),(q-1)*(q^3+1)/d]);
+	if p=2 then
+		nuSet:=Union(nuSet,4*[(q^3-1)*(q+1)/d,(q^4+q^2+1)/d,(q^4-1)/d,q^2-1],8*[q-1,(q^2-1)/d,(q^2+q+1)/d],[16]);
+	fi;
+	if p=3 then
+		nuSet:=Union(nuSet,9*[(q^2+1)*(q-1)/d,q^2-1,(q^2+q+1)/d],[27]);
+	fi;
+	if p=5 then
+		nuSet:=Union(nuSet,25*[q-1,(q^2-1)/d,(q^2+q+1)/d]);
+	fi;
+	if p=7 then
+		nuSet:=Union(nuSet,49*[(q-1)/d]);
+	fi;
+	if p=11 then
+		nuSet:=Union(nuSet,[121]);
+	fi;
+	nuSet:=Set(nuSet);
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.14.11
+NrElementOrdersE6:=function(q)
+	return Length(ElementOrdersE6(q));
+end;
+
+#3.14.12
+epsilonQBoundE6:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE6(q)/NrElementOrdersE6(q))+3.))/LogLogOrderE6(q);
+end;
+
+#3.15.1
+Order2E6:=function(Q)
+	local q;
+	q:=Sqrt(Q);
+	return 1/Gcd(3,q+1)*q^36*(q^12-1)*(q^9+1)*(q^8-1)*(q^5+1)*(q^2-1);
+end;
+
+#3.15.2
+LogLogOrder2E6:=function(Q)
+	local q;
+	q:=Sqrt(Q);
+	return Log(-Log(Float(Gcd(3,q+1)))+36.*Log(Float(q))+Log(Float(q^12-1))+Log(Float(q^9+1))+Log(Float(q^8-1))+Log(Float(q^5+1))+Log(Float(q^2-1)));
+end;
+
+#3.15.3
+OrderOut2E6:=function(Q)
+	local q,p;
+	q:=Sqrt(Q);
+	p:=FactorsInt(Q)[1];
+	return Gcd(3,q+1)*LogInt(Q,p);
+end;
+
+#3.15.4
+NrConjugacyClassesBound2E6:=function(Q)
+	local q;
+	q:=Sqrt(Q);
+	if (q mod 6)=1 then
+		return q^6+q^5+2*q^4+4*q^3+11*q^2+11*q+16;
+	fi;
+	if (q mod 6)=2 then
+		return Int(Ceil(Float((q^6+q^5+2*q^4+4*q^3+12*q^2+14*q+30)/3)));
+	fi;
+	if (q mod 6)=3 then
+		return q^6+q^5+2*q^4+4*q^3+11*q^2+11*q+15;
+	fi;
+	if (q mod 6)=4 then
+		return q^6+q^5+2*q^4+4*q^3+10*q^2+10*q+14;
+	fi;
+	if (q mod 6)=5 then
+		return (q^6+q^5+2*q^4+4*q^3+13*q^2+15*q+34)/3;
+	fi;
+end;
+
+#3.15.5
+NrAutOrbitsBound2E6:=function(Q)
+	return Int(Ceil(Float(NrConjugacyClassesBound2E6(Q)/OrderOut2E6(Q))));
+end;
+
+#3.15.6
+epsilonOmegaBound2E6:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2E6(Q))))/LogLogOrder2E6(Q);
+end;
+
+#3.15.7
+SemisimpleElementOrders2E6:=function(Q)
+	local q,p,d,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	p:=FactorsInt(q)[1];
+	d:=Gcd(3,q+1);
+	nuSet:=[(q^6-1)/d,(q^6-q^3+1)/d,(q^2-q+1)*(q^4-q^2+1)/d,(q+1)*(q^2+1)*(q^3-1)/d,(q^2-1)*(q^4+1)/d,(q-1)*(q^5+1)/d,q^5+1];
+	nuSet:=Set(nuSet);
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.15.8
+NrSemisimpleElementOrders2E6:=function(Q)
+	return Length(SemisimpleElementOrders2E6(Q));
+end;
+
+#3.15.9
+ElementOrders2E6:=function(Q)
+	local q,p,d,nuSet,ordersSet,n;
+	q:=Sqrt(Q);
+	p:=FactorsInt(q)[1];
+	d:=Gcd(3,q+1);
+	nuSet:=[(q^6-1)/d,(q^6-q^3+1)/d,(q^2-q+1)*(q^4-q^2+1)/d,(q+1)*(q^2+1)*(q^3-1)/d,(q^2-1)*(q^4+1)/d,(q-1)*(q^5+1)/d,q^5+1];
+	nuSet:=Union(nuSet,p*[(q^6-1)/(d*(q+1)),(q^5+1)/d,q^4-1,(q^3+1)*(q-1),(q+1)*(q^3-1)/d]);
+	if p=2 then
+		nuSet:=Union(nuSet,4*[(q^3+1)*(q-1)/d,(q^4+q^2+1)/d,(q^4-1)/d,q^2-1],8*[q+1,(q^2-1)/d,(q^2-q+1)/d],[16]);
+	fi;
+	if p=3 then
+		nuSet:=Union(nuSet,9*[(q^2+1)*(q+1)/d,q^2-1,(q^2-q+1)/d],[27]);
+	fi;
+	if p=5 then
+		nuSet:=Union(nuSet,25*[q+1,(q^2-1)/d,(q^2-q+1)/d]);
+	fi;
+	if p=7 then
+		nuSet:=Union(nuSet,49*[(q+1)/d]);
+	fi;
+	if p=11 then
+		nuSet:=Union(nuSet,[121]);
+	fi;
+	nuSet:=Set(nuSet);
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.15.10
+NrElementOrders2E6:=function(Q)
+	return Length(ElementOrders2E6(Q));
+end;
+
+#3.15.11
+epsilonQBound2E6:=function(Q)
+	return Log(Log(Float(NrAutOrbitsBound2E6(Q)/NrElementOrders2E6(Q))+3.))/LogLogOrder2E6(Q);
+end;
+
+#3.16.1
+OrderE7:=function(q)
+	return 1/Gcd(2,q-1)*q^63*(q^18-1)*(q^14-1)*(q^12-1)*(q^10-1)*(q^8-1)*(q^6-1)*(q^2-1);
+end;
+
+#3.16.2
+LogLogOrderE7:=function(q)
+	return Log(-Log(Float(Gcd(2,q-1)))+63.*Log(Float(q))+Log(Float(q^18-1))+Log(Float(q^14-1))+Log(Float(q^12-1))+Log(Float(q^10-1))+Log(Float(q^8-1))+Log(Float(q^6-1))+Log(Float(q^2-1)));
+end;
+
+#3.16.3
+OrderOutE7:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	return Gcd(2,q-1)*LogInt(q,p);
+end;
+
+#3.16.4
+NrConjugacyClassesBoundE7:=function(q)
+	if (q mod 12) in [1,5,7,11] then
+		return Int(Ceil(Float((q^7+q^6+2*q^5+5*q^4+13*q^3+24*q^2+47*q+59)/2)));
+	fi;
+	if IsEvenInt(q) then
+		return q^7+q^6+2*q^5+4*q^4+10*q^3+15*q^2+25*q+21;
+	fi;
+	if (q mod 3)=0 then
+		return Int(Ceil(Float((q^7+q^6+2*q^5+5*q^4+13*q^3+24*q^2+46*q+57)/2)));
+	fi;
+end;
+
+#3.16.5
+NrAutOrbitsBoundE7:=function(q)
+	return Int(Ceil(Float(NrConjugacyClassesBoundE7(q)/OrderOutE7(q))));
+end;
+
+#3.16.6
+epsilonOmegaBoundE7:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE7(q))))/LogLogOrderE7(q);
+end;
+
+#3.16.7
+CoxeterNoE7:=function()
+	return 18;
+end;
+
+#3.16.8
+SemisimpleElementOrdersE7:=function(q)
+	local d,nuSet,ordersSet,n;
+	d:=Gcd(2,q-1);
+	nuSet:=
+		[
+			(q^2+q+1)*(q^5-1)/d,(q^2-q+1)*(q^5+1)/d,(q+1)*(q^6-q^3+1)/d,(q-1)*(q^6+q^3+1)/d,(q^7+1)/d,(q^7-1)/d,(q^3+1)*(q^4-q^2+1)/d,
+			(q^3-1)*(q^4-q^2+1)/d,(q^2+q+1)*(q^4-1),(q^2-q+1)*(q^4-1),(q+1)*(q^5-1),(q-1)*(q^5+1),(q^8-1)/((q+1)*Gcd(4,q+1)),
+			(q^8-1)/((q-1)*Gcd(4,q-1)),(q^4+1)*(q^2-1),q^6-1
+		]
+	;
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.16.9
+NrSemisimpleElementOrdersE7:=function(q)
+	return Length(SemisimpleElementOrdersE7(q));
+end;
+
+#3.16.10
+ElementOrdersE7:=function(q)
+	local p,d,nuSet,ordersSet,n;
+	p:=FactorsInt(q)[1];
+	d:=Gcd(2,q-1);
+	nuSet:=
+		[
+			(q^2+q+1)*(q^5-1)/d,(q^2-q+1)*(q^5+1)/d,(q+1)*(q^6-q^3+1)/d,(q-1)*(q^6+q^3+1)/d,(q^7+1)/d,(q^7-1)/d,(q^3+1)*(q^4-q^2+1)/d,
+			(q^3-1)*(q^4-q^2+1)/d,(q^2+q+1)*(q^4-1),(q^2-q+1)*(q^4-1),(q+1)*(q^5-1),(q-1)*(q^5+1),(q^8-1)/((q+1)*Gcd(4,q+1)),
+			(q^8-1)/((q-1)*Gcd(4,q-1)),(q^4+1)*(q^2-1),q^6-1,p*(q^6-1)/d,p*(q^5+1),p*(q^5-1),p*(q^4+1)*(q^2+1)/d,p*(q^4+1)*(q^2-1)/d,
+			p*(q^2+q+1)*(q^4-1)/d,p*(q^2-q+1)*(q^4-1)/d,p*(q^4-q^2+1)
+		]
+	;
+	nuSet:=Set(nuSet);
+	if p=2 then
+		nuSet:=Union(nuSet,[4*(q^6-1)/(q+1),4*(q^6-1)/(q-1),4*(q^5+1),4*(q^5-1),4*(q^4-1),4*(q^3+1)*(q-1),4*(q^3-1)*(q+1),8*(q^3+1),8*(q^3-1),8*(q^2+1)*(q+1),8*(q^2+1)*(q-1),8*(q^2-1),16*(q+1),16*(q-1),32]);
+	fi;
+	if p=3 then
+		nuSet:=Union(nuSet,[9*(q^4-1)/2,9*(q^3+1)*(q-1)/2,9*(q^3-1)*(q+1)/2,9*(q^2+1)*(q+1)/2,9*(q^2+1)*(q-1)/2,9*(q^2-1),27*(q+1),27*(q-1)]);
+	fi;
+	if p=5 then
+		nuSet:=Union(nuSet,[25*(q^3+1)/2,25*(q^3-1)/2,25*(q^2+1)*(q+1)/2,25*(q^2+1)*(q-1)/2,25*(q^2-1)]);
+	fi;
+	if p=7 then
+		nuSet:=Union(nuSet,[49*(q^2-1)/2,49*(q+1),49*(q-1)]);
+	fi;
+	if p=11 then
+		nuSet:=Union(nuSet,[121*(q+1)/2,121*(q-1)/2]);
+	fi;
+	if (p in [13,17]) then
+		nuSet:=Union(nuSet,[p^2]);
+	fi;
+	ordersSet:=[];
+	for n in nuSet do
+		ordersSet:=Union(ordersSet,DivisorsInt(n));
+	od;
+	return ordersSet;
+end;
+
+#3.16.11
+NrElementOrdersE7:=function(q)
+	return Length(ElementOrdersE7(q));
+end;
+
+#3.16.12
+epsilonQBoundE7:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE7(q)/NrElementOrdersE7(q))+3.))/LogLogOrderE7(q);
+end;
+
+#3.17.1
+OrderE8:=function(q)
+	return q^120*(q^30-1)*(q^24-1)*(q^20-1)*(q^18-1)*(q^14-1)*(q^12-1)*(q^8-1)*(q^2-1);
+end;
+
+#3.17.2
+LogLogOrderE8:=function(q)
+	return Log(120.*Log(Float(q))+Log(Float(q^30-1))+Log(Float(q^24-1))+Log(Float(q^20-1))+Log(Float(q^18-1))+Log(Float(q^14-1))+Log(Float(q^12-1))+Log(Float(q^8-1))+Log(Float(q^2-1)));
+end;
+
+#3.17.3
+OrderOutE8:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	return LogInt(q,p);
+end;
+
+#3.17.4
+NrConjugacyClassesE8:=function(q)
+	if (q mod 60) in [1,7,11,13,17,19,23,29,31,37,41,43,47,49,53,59] then
+		return q^8+q^7+2*q^6+3*q^5+10*q^4+16*q^3+40*q^2+67*q+112;
+	fi;
+	if IsEvenInt(q) then
+		return q^8+q^7+2*q^6+3*q^5+9*q^4+14*q^3+32*q^2+47*q+70;
+	fi;
+	if (q mod 3)=0 then
+		return q^8+q^7+2*q^6+3*q^5+10*q^4+16*q^3+39*q^2+65*q+102;
+	fi;
+	if (q mod 5)=0 then
+		return q^8+q^7+2*q^6+3*q^5+10*q^4+16*q^3+40*q^2+67*q+111;
+	fi;
+end;
+
+#3.17.5
+NrAutOrbitsBoundE8:=function(q)
+	return Int(Ceil(Float(NrConjugacyClassesE8(q)/OrderOutE8(q))));
+end;
+
+#3.17.6
+epsilonOmegaBoundE8:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE8(q))))/LogLogOrderE8(q);
+end;
+
+#3.17.7
+CoxeterNoE8:=function()
+	return 30;
+end;
+
+#3.17.8
+SemisimpleElementOrdersE8:=function(q)
+	local semisimpleOrders;
+	semisimpleOrders:=[];
+	#T(1)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q-1));
+	#T(-1)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q+1));
+	#T(2)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^2-1));
+	#T(-2) has same exp as T(2): q^2-1
+	#T(3) has same exp as T(2): q^2-1
+	#T(-3) has same exp as T(2): q^2-1
+	#T(4)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^3-1));
+	#T(-4)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^3+1));
+	#T(5) has same exp as T(2): q^2-1
+	#T(-5) has same exp as T(2): q^2-1
+	#T(6)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,q^3-1)));
+	#T(-6)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,q^3+1)));
+	#T(7)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^4-1));
+	#T(-7) has same exp as T(7): q^4-1
+	#T(8)=T(-8) has same exp as T(2): q^2-1
+	#T(9)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q+1)*(q^3-1))));
+	#T(-9)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q-1)*(q^3+1))));
+	#T(10) has same exp as T(4): q^3-1
+	#T(-10) has same exp as T(-4): q^3+1
+	#T(11) has same exp as T(7): q^4-1
+	#T(-11) has same exp as T(7): q^4-1
+	#T(12)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^5-1));
+	#T(-12)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^5+1));
+	#T(13) has same exp as T(-9): Lcm(q^2-1,(q-1)*(q^3+1))
+	#T(-13) has same exp as T(9): Lcm(q^2-1,(q+1)*(q^3-1))
+	#T(14)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^2+1)));
+	#T(-14)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^2+1)));
+	#T(15) has exp (q+1)*(q^3-1), divides that of T(9)
+	#T(-15) has exp (q-1)*(q^3+1), divides that of T(-9)
+	#T(16)=T(-16) has same exp as T(7): q^4-1
+	#T(17)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^5-1)));
+	#T(-17)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^5+1)));
+	#T(18)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^6-1));
+	#T(-18) has same exp as T(18): q^6-1
+	#T(19)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^4+1)));
+	#T(-19) has same exp as T(19): (q^2-1)*(q^4+1)
+	#T(20)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^2+1)*(q^3+1)));
+	#T(-20)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^2+1)*(q^3+1)));
+	#T(21)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+q+1,q^3-1)));
+	#T(-21)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-q+1,q^3+1)));
+	#T(22)=T(-22)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^3-1,q^3+1)));
+	#T(23)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^3-1)*(q^4-q^2+1)));
+	#T(-23)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^3+1)*(q^4-q^2+1)));
+	#T(24)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^6+q^3+1)));
+	#T(-24)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^6-q^3+1)));
+	#T(25)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-q+1,(q-1)*(q^4+q^2+1))));
+	#T(-25)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+q+1,(q+1)*(q^4+q^2+1))));
+	#T(26)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^3-1,q^4-1)));
+	#T(-26)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^3+1,q^4-1)));
+	#T(27)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^5-1)*(q^2+q+1)));
+	#T(-27)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^5+1)*(q^2-q+1)));
+	#T(28)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q^2+1)*(q-1))));
+	#T(-28)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q^2+1)*(q+1))));
+	#T(29)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^7-1));
+	#T(-29)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^7+1));
+	#T(30)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm((q-1)*(q^4+1),(q-1)*(q^2+1))));
+	#T(-30)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm((q+1)*(q^4+1),(q+1)*(q^2+1))));
+	#T(31)=T(-31) has same exp as T(2): q^2-1
+	#T(32)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q+1)*(q^3-1))));
+	#T(-32)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q-1)*(q^3+1))));
+	#T(33) has same exp as T(7): q^4-1
+	#T(-33) has same exp as T(7): q^4-1
+	#T(34) has exp (q+1)*(q^3-1), divides that of T(9)
+	#T(-34) has exp (q-1)*(q^3+1), divides that of T(-9)
+	#T(35)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm((q+1)*(q^3-1),q^4-1)));
+	#T(-35)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm((q-1)*(q^3+1),q^4-1)));
+	#T(36)=T(-36) has exp q^4-1, same as T(7)
+	#T(37)=T(-37) has exp Lcm(q^2-1,q^2+1), divides that of T(28)
+	#T(38)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q+1)*(q^5-1))));
+	#T(-38)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,(q-1)*(q^5+1))));
+	#T(39)=T(-39) has exp q^6-1, same as T(18)
+	#T(40)=T(-40) has exp q^6-1, same as T(18)
+	#T(41)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^3-1)*(q^2+1)));
+	#T(-41)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^3+1)*(q^2+1)));
+	#T(42)=T(-42)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^4+1)));
+	#T(43)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+q+1,(q+1)*(q^3-1))));
+	#T(-43)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-q+1,(q-1)*(q^3+1))));
+	#T(44)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^2+q+1)*(q^5-1)));
+	#T(-44)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^2-q+1)*(q^5+1)));
+	#T(45)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^2+1)*(q^5-1)));
+	#T(-45)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^2+1)*(q^5+1)));
+	#T(46)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^7-1)));
+	#T(-46)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^7+1)));
+	#T(47)=T(-47)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^8-1));
+	#T(48)=T(-48)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-1,q^2+1,q^4+1)));
+	#T(49)=T(-49) has exp q^4-1, same as T(7)
+	#T(50)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q+1)*(q^3-1)*(q^4+1)));
+	#T(-50)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q-1)*(q^3+1)*(q^4+1)));
+	#T(51)=T(-51)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2+1)*(q^6-1)));
+	#T(52)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^2+q+1)*(q^4-q^2+1)));
+	#T(-52)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^2-q+1)*(q^4-q^2+1)));
+	#T(53)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^6+q^3+1)));
+	#T(-53)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^6-q^3+1)));
+	#T(54)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-q+1,(q+1)*(q^3-1))));
+	#T(-54)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+q+1,(q-1)*(q^3+1))));
+	#T(55)=T(-55)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^2-1)*(q^6+1)));
+	#T(56) has exp q^2+q+1, divides that of T(21)
+	#T(-56) has exp q^2-q+1, divides that of T(-21)
+	#T(57)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^4+q^3+q^2+q+1));
+	#T(-57)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^4-q^3+q^2-q+1));
+	#T(58)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+q+1,q^6+q^3+1)));
+	#T(-58)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2-q+1,q^6-q^3+1)));
+	#T(59)=T(-59) has exp q^2+1, divides that of T(14)
+	#T(60)=T(-60)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^2+1,q^6+1)));
+	#T(61)=T(-61) has exp q^4+1, divides that of T(19)
+	#T(62)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^4-q^2+1)*(q^2+q+1)));
+	#T(-62)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt((q^4-q^2+1)*(q^2-q+1)));
+	#T(63)=T(-63)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(Lcm(q^4+q^2+1,q^2+q+1,q^2-q+1)));
+	#T(64)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^8+q^7-q^5-q^4-q^3+q+1));
+	#T(-64)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^8-q^7+q^5+q^4+q^3-q+1));
+	#T(65)=T(-65)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^8-q^4+1));
+	#T(66)=T(-66)
+	semisimpleOrders:=Union(semisimpleOrders,DivisorsInt(q^8-q^6+q^4-q^2+1));
+	#T(67)=T(-67) has exp q^4-q^2+1, divides that of T(62)
+	return semisimpleOrders;
+end;
+
+#3.17.9
+NrSemisimpleElementOrdersE8:=function(q)
+	return Length(SemisimpleElementOrdersE8(q));
+end;
+
+#3.17.10
+NrElementOrdersBoundE8:=function(q)
+	local p;
+	p:=FactorsInt(q)[1];
+	return NrSemisimpleElementOrdersE8(q)*(1+Int(Ceil(Log(Float(CoxeterNoE8()))/Log(Float(p)))));
+end;
+
+#3.17.11
+epsilonQBoundE8:=function(q)
+	return Log(Log(Float(NrAutOrbitsBoundE8(q)/NrElementOrdersBoundE8(q))+3.))/LogLogOrderE8(q);
+end;
+
+#3.18.1
+NrAutOrbits:=function(G)
+	local A,I,outReps,conjClasses,conjClassesReps,counter,conjRep,toDelete,alpha,r;
+	A:=AutomorphismGroup(G);
+	I:=InnerAutomorphismsAutomorphismGroup(A);
+	outReps:=RightTransversal(A,I);
+	conjClasses:=ConjugacyClasses(G);
+	conjClassesReps:=List(conjClasses,C->Representative(C));
+	counter:=0;
+	while not IsEmpty(conjClassesReps) do
+		counter:=counter+1;
+		conjRep:=conjClassesReps[1];
+		toDelete:=[];
+		for alpha in outReps do
+			for r in conjClassesReps do
+				if IsConjugate(G,conjRep^alpha,r) then
+					Add(toDelete,r);
+				fi;
+			od;
+		od;
+		conjClassesReps:=Difference(conjClassesReps,toDelete);
+	od;
+	return counter;
+end;
+
+#3.18.2
+ElementOrders:=function(G)
+	local conjClasses,orderList,C;
+	conjClasses:=ConjugacyClasses(G);
+	orderList:=[];
+	for C in conjClasses do
+		orderList:=Union(orderList,[Order(Representative(C))]);
+	od;
+	return orderList;
+end;
+
+#3.18.3
+NrElementOrders:=function(G)
+	return Length(ElementOrders(G));
+end;
+
+#3.18.4
+epsilonOmegaBoundGeneral1:=function(symb,Q)
+	local q,orderBound,omegaBound;
+	if symb="A1" then
+		q:=Float(Q);
+		orderBound:=q^3;
+		omegaBound:=q/(4.*Log(q)/Log(2.));
+	fi;
+	if symb="A2" then
+		q:=Float(Q);
+		orderBound:=q^8;
+		omegaBound:=q^2/(18.*Log(q)/Log(2.));
+	fi;
+	if symb="2A2" then
+		q:=Sqrt(Float(Q));
+		orderBound:=q^8;
+		omegaBound:=q^2/(18.*Log(q)/Log(2.));
+	fi;
+	if (symb="B2" or symb="C2") then
+		q:=Float(Q);
+		orderBound:=q^10;
+		omegaBound:=q^2/(4.*Log(q)/Log(2.));
+	fi;
+	if symb="G2" then
+		q:=Float(Q);
+		orderBound:=q^14;
+		omegaBound:=q^2/(2.*Log(q)/Log(2.));
+	fi;
+	if symb="2B2" then
+		q:=Sqrt(Float(Q));
+		orderBound:=2.*q^10;
+		omegaBound:=Sqrt(2.)*q;
+	fi;
+	if symb="2G2" then
+		q:=Sqrt(Float(Q));
+		orderBound:=3.*q^14;
+		omegaBound:=Sqrt(3.)*q;
+	fi;
+	return Log(Log(omegaBound))/Log(Log(orderBound));
+end;
+
+#3.18.5
+epsilonOmegaBoundGeneral2:=function(d)
+	return (Log(Float(d)-2*Log(Float(d+1))/Log(2.)-Log(6.)/Log(2.))+Log(Log(2.)))/(Log(4.*Float(d)^2)+Log(Log(2.)));
+end;
+
+#3.18.6
+epsilonOmegaBoundGeneral3:=function(d,q)
+	return Log(Float(d)-2.*Log(Float(d+1))/Log(Float(q))-Log(6.)/Log(Float(q))-1./(Exp(1.)*Log(2.)))/Log(4.*Float(d)^2);
+end;
+
+#3.18.7
+q0ListOmega:=[[3,10007],[4,373],[5,32],[6,13],[7,7],[8,5],[9,4],[10,4],[11,3],[12,3],[13,3],[14,3],[15,3],[16,3],[17,3],[18,3]];
+
+#3.18.8
+exceptionsListOmega:=function()
+	local exceptionsList,alt5EpsilonOmega,pair,d,q0,q,e;
+	exceptionsList:=[];
+	alt5EpsilonOmega:=Log(Log(4.))/Log(Log(60.));
+	for pair in q0ListOmega do
+		d:=pair[1];
+		q0:=pair[2];
+		for q in [2..q0-1] do
+			if not IsPrimePowerInt(q) then
+				continue;
+			fi;
+			if epsilonOmegaBoundA(d,q,2)<=alt5EpsilonOmega then
+				Add(exceptionsList,["A",d,q]);
+			fi;
+			if epsilonOmegaBound2A(d,q^2,2)<=alt5EpsilonOmega then
+				Add(exceptionsList,["2A",d,q^2]);
+			fi;
+			if epsilonOmegaBoundB(d,q,2)<=alt5EpsilonOmega then
+				Add(exceptionsList,["B",d,q]);
+			fi;
+			if epsilonOmegaBoundC(d,q,2)<=alt5EpsilonOmega then
+				Add(exceptionsList,["C",d,q]);
+			fi;
+			if d>=4 then
+				if epsilonOmegaBoundD(d,q,2)<=alt5EpsilonOmega then
+					Add(exceptionsList,["D",d,q]);
+				fi;
+				if epsilonOmegaBound2D(d,q^2,2)<=alt5EpsilonOmega then
+					Add(exceptionsList,["2D",d,q^2]);
+				fi;
+			fi;
+			if d=4 then
+				if epsilonOmegaBound3D4(q^3)<=alt5EpsilonOmega then
+					Add(exceptionsList,["3D4",q^3]);
+				fi;
+				if epsilonOmegaBoundF4(q)<=alt5EpsilonOmega then
+					Add(exceptionsList,["F4",q]);
+				fi;
+			fi;
+			if d=6 then
+				if epsilonOmegaBoundE6(q)<=alt5EpsilonOmega then
+					Add(exceptionsList,["E6",q]);
+				fi;
+				if epsilonOmegaBound2E6(q^2)<=alt5EpsilonOmega then
+					Add(exceptionsList,["2E6",q^2]);
+				fi;
+			fi;
+			if d=7 then
+				if epsilonOmegaBoundE7(q)<=alt5EpsilonOmega then
+					Add(exceptionsList,["E7",q]);
+				fi;
+			fi;
+			if d=8 then
+				if epsilonOmegaBoundE8(q)<=alt5EpsilonOmega then
+					Add(exceptionsList,["E8",q]);
+				fi;
+			fi;
+		od;
+		if d=4 then
+			e:=3;
+			while Sqrt(2.)^e<Float(q0) do
+				if epsilonOmegaBound2F4(2^e)<=alt5EpsilonOmega then
+					Add(exceptionsList,["2F4",2^e]);
+				fi;
+				e:=e+2;
+			od;
+		fi;
+	od;
+	return exceptionsList;
+end;
+
+#3.18.9
+nrDistinctPartsPartitions:=
+	[
+		1,1,1,2,2,3,4,5,6,8,10,12,15,18,22,27,32,38,46,54,64,76,89,104,122,142,165,192,222,256,296,340,390,448,512,585,668,760,864,982,1113,1260,1426,1610,1816,2048,
+		2304,2590,2910,3264,3658,4097,4582,5120,5718,6378,7108,7917,8808,9792,10880,12076,13394,14848,16444,18200,20132,22250,24576,27130,29927,32992,36352,40026,
+		44046,48446,53250,58499,64234,70488,77312,84756,92864,101698,111322,121792,133184,145578,159046,173682,189586,206848,225585,245920,267968,291874,317788,345856,
+		376256,409174,444793,483330,525016,570078,618784,671418,728260,789640,855906,927406,1004544,1087744,1177438,1274118,1378304,1490528,1611388,1741521,1881578,
+		2032290,2194432,2368800,2556284,2757826,2974400,3207086,3457027,3725410,4013544,4322816,4654670,5010688,5392550,5802008,6240974,6711480,7215644,7755776,
+		8334326,8953856,9617150,10327156,11086968,11899934,12769602,13699699,14694244,15757502,16893952,18108418,19406016,20792120,22272512,23853318,25540982,
+		27342421,29264960,31316314,33504746,35839008,38328320,40982540,43812110,46828032,50042056,53466624,57114844,61000704,65139008,69545358,74236384,79229676,
+		84543782,90198446,96214550,102614114,109420549,116658616,124354422,132535702,141231780,150473568,160293888,170727424,181810744,193582642,206084096,
+		219358315,233451098,248410816,264288462,281138048,299016608,317984256,338104630,359444904,382075868,406072422,431513602,458482688,487067746,517361670,
+		549462336,583473184,619503296,657667584,698087424,740890786,786212446,834194700,884987529,938748852,995645336,1055852590,1119555488,1186949056,
+		1258238720,1333640710,1413383026,1497705768,1586861606,1681116852,1780751883,1886061684,1997357056,2114965120,2239229960,2370513986,2509198528,
+		2655684608,2810394454,2973772212,3146284870,3328423936,3520706304,3723675326,3937902688,4163989458,4402567324,4654300706,4919887992,5200062976,
+		5495597248,5807301632,6136027874,6482671322,6848172604,7233519619,7639750522,8067955712,8519280128,8994926602,9496158208,10024300890,10580747264,
+		11166959338,11784471548,12434895064,13119920928,13841323582,14600965705,15400801856,16242882560,17129359744,18062490974,19044644146,20078303620,
+		21166075136,22310691192,23515017984,24782061070,26114971540,27517053882,28991772486,30542758738,32173819904,33888946600,35692320960,37588326642,
+		39581557440,41676826624,43879178240,46193897032,48626519094,51182844672,53868949522,56691197084,59656252987,62771098024,66043042088,69479740554,
+		73089209120,76879839744,80860419136,85040145750,89428647940,94036004868,98872765938,103949971456,109279176298,114872472064,120742510607,126902530816,
+		133366383848,140148559930,147264218618,154729217536,162560142890,170774343642,179389964242,188425979304,197902232212,207839472390,218259394656,229184682870,
+		240639052286,252647294208,265235325352,278430235904,292260340224,306755232574,321945841664,337864488192,354544947722,372022512608,390334057172,409518108690,
+		429614917632,450666531450,472716874732,495811828759,519999315040,545329385792,571854313990,599628687918,628709513216,659156314788,691031243770,724399192576,
+		759327910200,795888123110,834153664940,874201606890,916112394270,959969992704,1005862035461,1053879977632,1104119260918,1156679479970,1211664556454,
+		1269182924648,1329347719190,1392276971520,1458093818816,1526926715868,1598909656578,1674182409148,1752890755072,1835186738752,1921228932216,2011182704478,
+		2105220502772,2203522150410,2306275150210,2413675001278,2525925533946,2643239251488,2765837686784,2893951778822,3027822257408,3167700044480,3313846677248,
+		3466534741118,3626048321048,3792683476992,3966748730794,4148565573659,4338469000206,4536808055808,4743946406976,4960262940968,5186152380864,5422025926436,
+		5668311927092,5925456572864,6193924614094,6474200116480,6766787237064,7072211032064,7391018303854,7723778471936,8071084479444,8433553742947,8811829129614,
+		9206579974150,9618503143424,10048324132444,10496798204736,10964711585280,11452882689344,11962163400706,12493440408000,13047636581998,13625712407808,
+		14228667481438,14857542052794,15513418629884,16197423654282,16910729229128,17654554915430,18430169607104,19238893465516,20082099930208,20961217816576,
+		21877733480960,22833193070488,23829204869148,24867441720078,25949643542056,27077619952640,28253252977152,29478499862528,30755396009352,32086058000384,
+		33472686745954,34917570760097,36423089545254,37991717107136,39626025614146,41328689179000,43102487785006,44950311372460,46875164062334,48880168540672,
+		50968570620480,53143743957460,55409194944512,57768567802880,60225649845546,62784376939520,65448839185792,68223286792200,71112136167457,74119976256080,
+		77251575089318,80511886581728,83906057594564,87439435240798,91117574462854,94946245905984,98931444061528,103079395713070,107396568710144,111889681043072,
+		116565710254336,121431903212544,126495786222432,131765175508648,137248188100782,142953253093376,148889123320640,155064887475476,161489982646592,
+		168174207315550,175127734845952,182361127438194,189885350594524,197711788129024,205852257695744,214319026883034,223124829910884,232282884904960,
+		241806911798586,251711150901902,262010382112696,272719944823232,283855758565430,295434344369603,307472846894368,319989057373738,333001437357056,
+		346529143303468,360592052080640,375210787343946,390406746862530,406202130845496,422619971245764,439684162112802,457419491051264,475851671764998,
+		495007377762304,514914277284172,535601069436938,557097521610170,579434508247040,602644050950309,626759360010788,651814877431176,677846321430326,
+		704890732521792,732986521245024,762173517537344,792493021847638,823987858076150,856702428332358,890682769618944,925976612533600,962633441984512,
+		1000704560035328,1040243150979584,1081304348644370,1123945306048160,1168225267521350,1214205643293832,1261950086684682,1311524574011392,1362997487228740,
+		1416439699443142,1471924663429482,1529528503167446,1589330108554312,1651411233432320,1715856596955136,1782753988462274,1852194376012286,1924272018606886,
+		1999084582288680,2076733260276736,2157322897180672,2240962117491470,2327763458527114,2417843507884236,2511323045610351,2608327191289920,2708985556107624,
+		2813432400120490,2921806794949600,3034252791967794,3150919596233664,3271961746402048,3397539300701248,3527818029248524,3662969612954798,3803171849124234,
+		3948608864043776,4099471332835560,4255956706695932,4418269447841280,4586621272457656,4761231401798354,4942326821776384,5130142551375961,5324921920049402,
+		5526916854475456,5736388175033294,5953605902182496,6178849573157632,6412408569364172,6654582454692416,6905681325194186,7166026170543674,7435949247529300,
+		7715794466060288,8005917788147074,8306687640136410,8618485338726400,8941705531262976,9276756650635608,9624061385342750,9984057165275480,10357196663576906,
+		10743948315198452,11144796852752066,11560243860059904,11990808344078336,12437027325849664,12899456450932840,13378670620050080,13875264640662318,
+		14389853899979968,14923075060210662,15475586776823052,16048070440393280,16641230942906536,17255797469365504,17892524315337728,18552191731392520,
+		19235606795358220,19943604313103648,20677047748880384,21436830186242063,22223875320324628,23039138482617536,23883607699335168,24758304784261244,
+		25664286467296970,26602645559925188,27574512158560256,28581054887124232,29623482180174912,30703043607660730,31821031242764410,32978781074283858,
+		34177674464740864,35419139655812608,36704653322667584,38035742178524764,39413984631175424,40841012493194682,42318512747302912,43848229368772905,
+		45431965206770144,47071583926240448,48769012012411666,50526240839972434,52345328808710100,54228403547862276,56177664191435968,58195383726460416,
+		60283911416633536,62445675303823360,64683184789593504,66999033299436018,69395901032399360,71876557798503424,74443865946867656,77100783387488398,
+		79850366709300780,82695774397715674,85640270154839880,88687226325279894,91840127431009792,95102573818807520,98478285423449690,101971105650462730,
+		105585005382256254,109324087111147520,113192589203419858,117194890298591726,121335513847754770,125619132795498490,130050574409982720,134634825265397248,
+		139377036381734912,144282528526859520,149356797685522944,154605520700705120,160034561092715412,165649975061163336,171458017675660736,177465149261191114,
+		183678041983751325,190103586642659098,196748899676004248,203621330385392608,210728468386953976,218078151295684608,225678472649866304,233537790083162880,
+		241664733752111550,250068215026397200,258757435450198016,267741895983024278,277031406528143070,286636095757627718,296566421243219584,306833179901865984,
+		317447518765789464,328420946087110306,339765342786728358,351492974258206912,363616502537591540,376148998849787577,389103956543205484,402495304424600520,
+		416337420505729280,430645146174587072,445433800804233382,460719196811917166,476517655182415360,492846021469767168,509721682291305440,527162582329148598,
+		545187241854615562,563814774790762406,583064907329563392,602957997120594432,623515053047830240,644757755612557334,666708477940781056,689390307433275250,
+		712827068077888960,737043343444141824,762064500379931334,787916713431721746,814626990010044184,842223196321956864,870734084093744242,900189318107640608,
+		930619504576216576,962056220379782044,994532043192721630,1028080582524565920,1062736511703408640,1098535600829904960,1135514750730008498,1173712027936514172,
+		1213166700730163200,1253919276271030014,1296011538852931584,1339486589314355090,1384388885639414580,1430764284784482304,1478660085766970048,1528125074052808586,
+		1579209567281427499,1631965462367952768,1686446284022472878,1742707234728607232,1800805246224619946,1860799032530519872,1922749144567113036,1986718026414081536,
+		2052770073254433792,2120971691055349926,2191391358036657966,2264099687978533120,2339169495422851818,2416675862823958500,2496696209705056142,2579310363879439352,
+		2664600634797244428,2752651889078946330,2843551628300021780,2937390069092795784,3034260225632153600,3134257994575189124,3237482242526609435,3344034896102501494,
+		3454021034668672126,3567548985831680614,3684730423761609196,3805680470429448896,3930517799844061184,4059364745374757400,4192347410249609126,4329595781321881860,
+		4471243846198231222,4617429713826630848,4768295738644494630,4923988648388880384,5084659675675275560,5250464693454186558,5421564354456374560,5598124234742500050,
+		5780314981475902398,5968312465039083520,6162297935619707410,6362458184395157504,6568985709446779998,6782078886540527872,7001942144914244608,7228786148214174518,
+		7462827980729244054,7704291339075503680,7953406729485749760,8210411670865707652,8475550903782345984,8749076605552831010,9031248611609428978,9322334643320220726,
+		9622610542448775692,9932360512443196568,10251877366749901978,10581462784351175488,10921427572733267968,11272091938497237400,11633785765828776960,
+		12006848903051575296,12391631457494629928,12788494098908438540,13197808371673868288,13619957016053893959,14055334298743378466,14504346352981572616,
+		14967411528498953760,15444960751575533888,15937437895497941056,16445300161710121118,16969018471958594188,17509077871744090112,18065977945399587372,
+		18640233243121488514,19232373720292328568,19842945189442326528,20472509785204469270,21121646442630320388,21790951389243426816,22481038651215306112,
+		23192540574062407000,23926108358272941056,24682412610281394566,25462143909222909774,26266013389911124610,27094753342492844032,27949117829248335651,
+		28829883319018418200,29737849339750236888,30673839149670160384,31638700427605669254,32633305982989846610,33658554486099838720,34715371219095227290,
+		35804708848435100160,36927548219271677272,38084899172434148232,39277801384630429508,40507325232515026318,41774572681288312388,43080678198507903008,
+		44426809693814783642,45814169485295430240,47243995293217932480,48717561261903748022,50236179010516854718,51801198713570368742,53414010211976077760,
+		55076044155484162048,56788773177380333568,58553713102334907284,60372424188321958720,62246512403548480780,64177630739362781184,66167480560136966222,
+		68217812991142070080,70330430345465913382,72507187591051510980,74749993858959671642,77060813993993324886,79441670148851154112,81894643423006213370,
+		84421875547541659360,87025570617208259448,89707996870998899650,92471488522574534656,95318447641911228416,98251346089571174528,101272727505042773236,
+		104385209350632943302,107591485012430987264,110894325959908708352,114296583965762716160,117801193387644125199,121411173513469673536,125129630972052918072,
+		128959762210836804066,132904856042561450240,136968296262749272064,141153564339935858166,145464242180631569964,149904014971051051906,154476674097698088756,
+		159186120148954115072,164036365999875151520,169031539982456470528,174175889143689803072,179473782593798967772,184929714947098946238,190548309857993940320,
+		196334323654695984198,202292649073309805056,208428319095005537792,214746510889072288890,221252549864715044864,227951913834539154112,234850237292743767414,
+		241953315811120943689,249267110556045123600,256797752929721054144,264551549339039858718,272534986095487680226,280754734449641432204,289217655763874584718,
+		297930806826997905474,306901445314657443886,316137035399407747392,325645253514488126844,335433994275434973760,345511376563766727650,355885749777096359936,
+		366565700250139849984,377560057851201255424,388877902758842327112,400528572423567315090,412521668719474946048,424867065290966672074,437574915099732795392,
+		450655658177369330930,464120029589126114344,477979067614429745662,492244122149966911170,506926863341272619400,522039290448922361710,537593740955580698210,
+		553602899920329986496,570079809586869714240,587037879252342841892,604490895403729929376,622453032128931789312,640938861809840788774,659963366104899437838,
+		679541947228839136972,699690439537485806528,720425121425732873728,741762727546991701362,763720461362638982518,786316008030210794556,809567547639319166144,
+		833493768804493257344,858113882624395098112,883447637017103810560,909515331441406613044,936337832014301763250,963936587035181776118,992333642927429160960,
+		1021551660608444235569,1051613932299408446200,1082544398786371565568,1114367667144560473278,1147109028938113381600,1180794478907750962944,1215450734159228878080,
+		1251105253865746348958,1287786259497817415734,1325522755594470078524,1364344551089994484950,1404282281210819616484,1445367429957483933184,1487632353187049193472,
+		1531110302311693280552,1575835448629633392352,1621842908304944646196,1669168768013256249344,1717850111270754672832,1767925045464369189888,1819432729601465049152,
+		1872413402797851023360,1926908413523388672000,1982960249624975888832,2040612569147195553350,2099910231971438004433,2160899332294829327200,2223627231970855235620,
+		2288142594734128375808,2354495421332311095576,2422737085588806034050,2492920371420428137984,2565099510834879982920,2639330222933498316202,2715669753945387483554,
+		2794176918319711061374,2874912140903608250624,2957937500233899330304,3043316772971451122764,3131115479507821559040,3221400930774553942016,3314242276286253036964,
+		3409710553449380120290,3507878738169513461128,3608821796790641279424,3712616739400920349720,3819342674540204977856,3929080865345535132928,4041914787171704356882,
+		4157930186724966539284,4277215142748892965176,4399860128302393541590,4525958074670926499072,4655604436952946600398,4788897261364720340170,4925937254307724324352,
+		5066827853243947716352,5211675299425579704384,5360588712526733770910,5513680167226050146304,5671064771790265593856,5832860748710099869700,5999189517441089061374,
+		6170175779303338018816,6345947604595520352920,6526636521979833420402,6712377610196059013120,6903309592164339957404,7099574931537767204250,7301319931767424124434,
+		7508694837744105125888,7721853940082523419680,7940955682115491800174,8166162769667249899264,8397642283676830881826,8635565795744155161506,8880109486673356395609,
+		9131454268089695383606,9389785907208346999296,9655295154835300580070,9928177876682605147290,10208635188082265245024,10496873592185196292642,10793105121733790337856,
+		11097547484498873147712,11410424212474095444360,11731964814923105357824
+	]
+;
+
+#3.18.10
+g2:=function(d)
+	local dPairs,counter,dPair;
+	dPairs:=Partitions(d,2);
+	counter:=0;
+	for dPair in dPairs do
+		counter:=counter+Sum(List([0..dPair[1]],i->Sum(List([0..dPair[2]],j->(nrDistinctPartsPartitions[i+1]*nrDistinctPartsPartitions[j+1])))));
+		if not dPair[1]=dPair[2] then
+			counter:=counter+Sum(List([0..dPair[2]],i->Sum(List([0..dPair[1]],j->(nrDistinctPartsPartitions[i+1]*nrDistinctPartsPartitions[j+1])))));
+		fi;
+	od;
+	counter:=counter+2*nrDistinctPartsPartitions[d+1];
+	return counter;
+end;
+
+#3.18.11
+epsilonQBoundExceptional:=function(symb,Q)
+	local q,d,kTor,h,kBound,c,e,omicronBound;
+	if symb="2B2" then
+		q:=Sqrt(Float(Q));
+		d:=2;
+		kTor:=3;
+		h:=4;
+		kBound:=Q;
+		c:=2;
+		e:=10;
+	fi;
+	if symb="G2" then
+		q:=Float(Q);
+		d:=2;
+		kTor:=6;
+		h:=6;
+		kBound:=q^2;
+		c:=2;
+		e:=14;
+	fi;
+	if symb="2G2" then
+		q:=Sqrt(Float(Q));
+		d:=2;
+		kTor:=4;
+		h:=6;
+		kBound:=Q;
+		c:=2;
+		e:=14;
+	fi;
+	if symb="F4" then
+		q:=Float(Q);
+		d:=4;
+		kTor:=25;
+		h:=12;
+		kBound:=q^4;
+		c:=2;
+		e:=52;
+	fi;
+	if symb="2F4" then
+		q:=Sqrt(Float(Q));
+		d:=4;
+		kTor:=11;
+		h:=12;
+		kBound:=q^4;
+		c:=2;
+		e:=52;
+	fi;
+	if symb="3D4" then
+		q:=Float(RootInt(Q,3));
+		d:=4;
+		kTor:=7;
+		h:=6;
+		kBound:=q^4;
+		c:=3;
+		e:=29;
+	fi;
+	if symb="E6" then
+		q:=Float(Q);
+		d:=6;
+		kTor:=25;
+		h:=12;
+		kBound:=q^6/3.;
+		c:=6;
+		e:=78;
+	fi;
+	if symb="2E6" then
+		q:=Sqrt(Float(Q));
+		d:=6;
+		kTor:=25;
+		h:=12;
+		kBound:=q^6/3.;
+		c:=6;
+		e:=78;
+	fi;
+	if symb="E7" then
+		q:=Float(Q);
+		d:=7;
+		kTor:=60;
+		h:=18;
+		kBound:=q^7/2.;
+		c:=2;
+		e:=133;
+	fi;
+	if symb="E8" then
+		q:=Float(Q);
+		d:=8;
+		kTor:=112;
+		h:=30;
+		kBound:=q^8;
+		c:=1;
+		e:=248;
+	fi;
+	omicronBound:=2*kTor*(1+Ceil(Log(Float(h))/Log(2.)))*Sqrt((q+1)^d);
+	return Log(Log(Float(kBound)/(Float(c)*Float(omicronBound)*Log(q)/Log(2.))))/Log(Log(Float(q^e)));
+end;
+
+#3.18.12
+q0ListQExceptional:=[["2B2",Sqrt(2^23)],["G2",6947],["2G2",Sqrt(3^19)],["F4",157],["2F4",Sqrt(2^15)],["3D4",79],["E6",59],["2E6",59],["E7",29],["E8",16]];
+
+#3.18.13
+exceptionsListQExceptional:=function()
+	local exceptionsList,monsterEpsilonQ,pair,symb,q0,k,q;
+	exceptionsList:=[];
+	monsterEpsilonQ:=Log(Log(Float(413/73)))/Log(Log(808017424794512875886459904961710757005754368000000000.));
+	for pair in q0ListQExceptional do
+		symb:=pair[1];
+		q0:=pair[2];
+		if symb="2B2" then
+			k:=1;
+			while 2^(2*k+1)<q0^2 do
+				if epsilonQBound2B2(2^(2*k+1))<=monsterEpsilonQ then
+					Add(exceptionsList,["2B2",2^(2*k+1)]);
+				fi;
+				k:=k+1;
+			od;
+		fi;
+		if symb="G2" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBoundG2(q)<=monsterEpsilonQ then
+					Add(exceptionsList,["G2",q]);
+				fi;
+			od;
+		fi;
+		if symb="2G2" then
+			k:=1;
+			while 3^(2*k+1)<q0^2 do
+				if epsilonQBound2G2(3^(2*k+1))<=monsterEpsilonQ then
+					Add(exceptionsList,["2G2",3^(2*k+1)]);
+				fi;
+				k:=k+1;
+			od;
+		fi;
+		if symb="F4" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBoundF4(q)<=monsterEpsilonQ then
+					Add(exceptionsList,["F4",q]);
+				fi;
+			od;
+		fi;
+		if symb="2F4" then
+			k:=1;
+			while 2^(2*k+1)<q0^2 do
+				if epsilonQBound2F4(2^(2*k+1))<=monsterEpsilonQ then
+					Add(exceptionsList,["2F4",2^(2*k+1)]);
+				fi;
+				k:=k+1;
+			od;
+		fi;
+		if symb="3D4" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBound3D4(q^3)<=monsterEpsilonQ then
+					Add(exceptionsList,["3D4",q^3]);
+				fi;
+			od;
+		fi;
+		if symb="E6" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBoundE6(q)<=monsterEpsilonQ then
+					Add(exceptionsList,["E6",q]);
+				fi;
+			od;
+		fi;
+		if symb="2E6" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBound2E6(q^2)<=monsterEpsilonQ then
+					Add(exceptionsList,["2E6",q^2]);
+				fi;
+			od;
+		fi;
+		if symb="E7" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBoundE7(q)<=monsterEpsilonQ then
+					Add(exceptionsList,["E7",q]);
+				fi;
+			od;
+		fi;
+		if symb="E8" then
+			for q in [2..q0-1] do
+				if not IsPrimePowerInt(q) then
+					continue;
+				fi;
+				if epsilonQBoundE8(q)<=monsterEpsilonQ then
+					Add(exceptionsList,["E8",q]);
+				fi;
+			od;
+		fi;
+	od;
+	return exceptionsList;
+end;
+
+#3.18.14
+epsilonQBoundClassical1:=function(d,type)
+	if not (type in [1..4]) then
+		return "This type is not available. Please set the type to 1, 2, 3 or 4.";
+	fi;
+	if type=1 then
+		return (Log((1.-Log(3.)/Log(4.))*Float(d)-(4.*Asin(1.)/Sqrt(3.)*Sqrt(Float(d))+3*Log(Float(d+1))+Log(2.+Log(Float(2*d))/Log(2.))+Log(4.))/Log(2.))+Log(Log(2.)))/(Log(Float(4*d^2))+Log(Log(2.)));
+	fi;
+	if type=2 then
+		return Log((1.-Log(4.)/Log(9.))*Float(d)-(4.*Asin(1.)/Sqrt(3.)*Sqrt(Float(d))+3*Log(Float(d+1))+Log(2.+Log(Float(2*d))/Log(2.))+Log(4.))/Log(3.)-1/(Exp(1.)*Log(2.)))/Log(Float(4*d^2));
+	fi;
+	if type=3 then
+		return	(Log((1.-0.311*Log(3.)/Log(2.))*Float(d)-(Log(Float(g2(d)))+2*Log(Float(2+1))+Log(2.+Log(Float(2*d))/Log(2.))+Log(2.))/Log(2.))+Log(Log(2.)))/(Log(Float(4*d^2))+Log(Log(2.)));
+	fi;
+	if type=4 then
+		return Log((1.-Log(4.)/Log(27.))*Float(d)-(Log(Float(g2(d)))+2.*Log(Float(d+1))+Log(2.+Log(Float(2*d+1))/Log(2.))+Log(2.))/Log(3.)-1./(Exp(1.)*Log(2.)))/Log(Float(4*d^2));
+	fi;
+end;
+
+#3.18.15
+epsilonQBoundClassical2:=function(d,q)
+	if d=1 then
+		return Log(Log(Float(q+1)/(8*Log(Float(q))/Log(2.)*(Sqrt(Float(q+1)/2.)+Sqrt(Float(q+1)/2.)))))/Log(Log(Float(q)*Float(q^2-1)));
+	fi;
+	if d=4 then
+		return Log(Log(Float(q^d)/(Log(Float(q))/Log(Float(2))*Float(12*Minimum(d+1,q+1)^2*g2(d)*Int((1.+Ceil(Log(Float(2*d))/Log(2.)))))*Sqrt(Float((q+1)^d)))))/Log(Float(4*d^2)*Log(Float(q)));
+	fi;
+	return Log(Log(Float(q^d)/(Log(Float(q))/Log(Float(2))*Float(4*Minimum(d+1,q+1)^2*g2(d)*Int((1.+Ceil(Log(Float(2*d))/Log(2.)))))*Sqrt(Float((q+1)^d)))))/Log(Float(4*d^2)*Log(Float(q)));
+end;
+
+#3.18.16
+q0ListQClassical:=[
+		[1,1100543],[2,62753],[3,4903],[4,1801],[5,401],[6,197],[7,121],[8,79],[9,59],[10,43],[11,37],[12,29],[13,25],[14,23],[15,19],[16,16],[17,16],[18,13],[19,11],[20,11],
+		[21,11],[22,9],[23,8],[24,8],[25,8],[26,7],[27,7],[28,7],[29,7],[30,7],[31,7],[32,7],[33,7],[34,7],[35,5],[36,5],[37,5],[38,5],[39,5],[40,5],[41,5],[42,5],[43,5],
+		[44,5],[45,5],[46,4],[47,4],[48,4],[49,4],[50,4],[51,4],[52,4],[53,4]
+	]
+;
+
+#3.18.17
+exceptionsListQClassical:=function()
+	local exceptionsList,monsterEpsilonQ,pair,d,q0,q;
+	exceptionsList:=[];
+	monsterEpsilonQ:=Log(Log(Float(413/73)))/Log(Log(808017424794512875886459904961710757005754368000000000.));
+	for pair in q0ListQClassical do
+		Print(Concatenation("d: ",String(pair[1]),"\n"));
+		d:=pair[1];
+		q0:=pair[2];
+		for q in [2..q0-1] do
+			if not IsPrimePowerInt(q) then
+				continue;
+			fi;
+			Print(Concatenation("q: ",String(q),"\n"));
+			if epsilonQBoundA(d,q,2,1)<=monsterEpsilonQ then
+				if epsilonQBoundA(d,q,2,2)<=monsterEpsilonQ then
+					if d=1 then
+						if Log(Log(Maximum(Float(NrAutOrbitsBoundA(1,q,2)/(NrSemisimpleElementOrdersA(1,q)+1)+3),4.)))/LogLogOrderA(1,q)<=monsterEpsilonQ then
+							Add(exceptionsList,["A",d,q]);
+						fi;
+					else
+						Add(exceptionsList,["A",d,q]);
+					fi;
+				fi;
+			fi;
+			if d=1 then
+				Print("Done!\n");
+				continue;
+			fi;
+			if epsilonQBound2A(d,q^2,2,1)<=monsterEpsilonQ then
+				if epsilonQBound2A(d,q^2,2,2)<=monsterEpsilonQ then
+					Add(exceptionsList,["2A",d,q^2]);
+				fi;
+			fi;
+			if epsilonQBoundB(d,q,1,1)<=monsterEpsilonQ then
+				if epsilonQBoundB(d,q,2,1)<=monsterEpsilonQ then
+					if epsilonQBoundB(d,q,2,2)<=monsterEpsilonQ then
+						Add(exceptionsList,["B",d,q]);
+					fi;
+				fi;
+			fi;
+			if d=2 then
+				Print("Done!\n");
+				continue;
+			fi;
+			if epsilonQBoundC(d,q,1,1)<=monsterEpsilonQ then
+				if epsilonQBoundC(d,q,2,1)<=monsterEpsilonQ then
+					if epsilonQBoundC(d,q,2,2)<=monsterEpsilonQ then
+						Add(exceptionsList,["C",d,q]);
+					fi;
+				fi;
+			fi;
+			if d=3 then
+				Print("Done!\n");
+				continue;
+			fi;
+			if epsilonQBoundD(d,q,1,1)<=monsterEpsilonQ then
+				if epsilonQBoundD(d,q,2,1)<=monsterEpsilonQ then
+					if epsilonQBoundD(d,q,2,2)<=monsterEpsilonQ then
+						Add(exceptionsList,["D",d,q]);
+					fi;
+				fi;
+			fi;
+			if epsilonQBound2D(d,q^2,1,1)<=monsterEpsilonQ then
+				if epsilonQBound2D(d,q^2,2,1)<=monsterEpsilonQ then
+					if epsilonQBound2D(d,q^2,2,2)<=monsterEpsilonQ then
+						Add(exceptionsList,["2D",d,q^2]);
+					fi;
+				fi;
+			fi;
+			Print("Done!\n");
+		od;
+		Print("Done!\n");
+	od;
+	return exceptionsList;
+end;
